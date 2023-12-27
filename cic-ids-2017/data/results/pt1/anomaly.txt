@@ -1,0 +1,178 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     anomalyTrainingData
+Instances:    8200
+Attributes:   77
+              FlowDuration
+              TotalFwdPackets
+              TotalBackwardPackets
+              TotalLengthofFwdPackets
+              TotalLengthofBwdPackets
+              FwdPacketLengthMax
+              FwdPacketLengthMin
+              FwdPacketLengthMean
+              FwdPacketLengthStd
+              BwdPacketLengthMax
+              BwdPacketLengthMin
+              BwdPacketLengthMean
+              BwdPacketLengthStd
+              FlowBytes/s
+              FlowPackets/s
+              FlowIATMean
+              FlowIATStd
+              FlowIATMax
+              FlowIATMin
+              FwdIATTotal
+              FwdIATMean
+              FwdIATStd
+              FwdIATMax
+              FwdIATMin
+              BwdIATTotal
+              BwdIATMean
+              BwdIATStd
+              BwdIATMax
+              BwdIATMin
+              FwdPSHFlags
+              BwdPSHFlags
+              FwdURGFlags
+              BwdURGFlags
+              FwdHeaderLength
+              BwdHeaderLength
+              FwdPackets/s
+              BwdPackets/s
+              MinPacketLength
+              MaxPacketLength
+              PacketLengthMean
+              PacketLengthStd
+              PacketLengthVariance
+              FINFlagCount
+              SYNFlagCount
+              RSTFlagCount
+              PSHFlagCount
+              ACKFlagCount
+              URGFlagCount
+              CWEFlagCount
+              ECEFlagCount
+              Down/UpRatio
+              AveragePacketSize
+              AvgFwdSegmentSize
+              AvgBwdSegmentSize
+              FwdAvgBytes/Bulk
+              FwdAvgPackets/Bulk
+              FwdAvgBulkRate
+              BwdAvgBytes/Bulk
+              BwdAvgPackets/Bulk
+              BwdAvgBulkRate
+              SubflowFwdPackets
+              SubflowFwdBytes
+              SubflowBwdPackets
+              SubflowBwdBytes
+              Init_Win_bytes_forward
+              Init_Win_bytes_backward
+              act_data_pkt_fwd
+              min_seg_size_forward
+              ActiveMean
+              ActiveStd
+              ActiveMax
+              ActiveMin
+              IdleMean
+              IdleStd
+              IdleMax
+              IdleMin
+              Label
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+FwdIATStd <= 0.319425
+|   FwdPacketLengthMean <= 0.002586
+|   |   BwdPacketLengthMean <= 0.002022
+|   |   |   act_data_pkt_fwd <= 0.000988
+|   |   |   |   IdleMean <= 0.084493
+|   |   |   |   |   Init_Win_bytes_forward <= 0.004211
+|   |   |   |   |   |   Init_Win_bytes_forward <= 0.003952
+|   |   |   |   |   |   |   FwdPacketLengthStd <= 0.00022
+|   |   |   |   |   |   |   |   Init_Win_bytes_forward <= 0.00383: BENIGN (673.0/4.0)
+|   |   |   |   |   |   |   |   Init_Win_bytes_forward > 0.00383
+|   |   |   |   |   |   |   |   |   Init_Win_bytes_forward <= 0.003845
+|   |   |   |   |   |   |   |   |   |   FwdPacketLengthMax <= 0.000086: abnormal (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   FwdPacketLengthMax > 0.000086: BENIGN (11.0)
+|   |   |   |   |   |   |   |   |   Init_Win_bytes_forward > 0.003845: BENIGN (208.0)
+|   |   |   |   |   |   |   FwdPacketLengthStd > 0.00022
+|   |   |   |   |   |   |   |   FwdPacketLengthMean <= 0.000463: abnormal (2.0)
+|   |   |   |   |   |   |   |   FwdPacketLengthMean > 0.000463
+|   |   |   |   |   |   |   |   |   FwdPSHFlags <= 0: BENIGN (25.0)
+|   |   |   |   |   |   |   |   |   FwdPSHFlags > 0: abnormal (3.0/1.0)
+|   |   |   |   |   |   Init_Win_bytes_forward > 0.003952
+|   |   |   |   |   |   |   FlowIATMin <= 0.000026
+|   |   |   |   |   |   |   |   TotalFwdPackets <= 0.000029
+|   |   |   |   |   |   |   |   |   min_seg_size_forward <= 0.540984: abnormal (12.0/1.0)
+|   |   |   |   |   |   |   |   |   min_seg_size_forward > 0.540984: BENIGN (7.0/2.0)
+|   |   |   |   |   |   |   |   TotalFwdPackets > 0.000029: BENIGN (3.0/1.0)
+|   |   |   |   |   |   |   FlowIATMin > 0.000026: BENIGN (14.0)
+|   |   |   |   |   Init_Win_bytes_forward > 0.004211: BENIGN (1303.0)
+|   |   |   |   IdleMean > 0.084493
+|   |   |   |   |   FwdPSHFlags <= 0
+|   |   |   |   |   |   FlowIATMin <= 0.004168: BENIGN (20.0)
+|   |   |   |   |   |   FlowIATMin > 0.004168: abnormal (3.0/1.0)
+|   |   |   |   |   FwdPSHFlags > 0: abnormal (2.0)
+|   |   |   act_data_pkt_fwd > 0.000988
+|   |   |   |   TotalFwdPackets <= 0.001293: BENIGN (6.0)
+|   |   |   |   TotalFwdPackets > 0.001293: abnormal (19.0)
+|   |   BwdPacketLengthMean > 0.002022
+|   |   |   PacketLengthMean <= 0.003595
+|   |   |   |   TotalBackwardPackets <= 0.00055: abnormal (75.0/1.0)
+|   |   |   |   TotalBackwardPackets > 0.00055: BENIGN (4.0)
+|   |   |   PacketLengthMean > 0.003595
+|   |   |   |   Down/UpRatio <= 0.125: BENIGN (62.0/1.0)
+|   |   |   |   Down/UpRatio > 0.125: abnormal (12.0)
+|   FwdPacketLengthMean > 0.002586
+|   |   AveragePacketSize <= 0.352162: BENIGN (5549.0/1.0)
+|   |   AveragePacketSize > 0.352162
+|   |   |   TotalLengthofFwdPackets <= 0.000605
+|   |   |   |   TotalBackwardPackets <= 0.000007: BENIGN (2.0)
+|   |   |   |   TotalBackwardPackets > 0.000007: abnormal (4.0)
+|   |   |   TotalLengthofFwdPackets > 0.000605: BENIGN (63.0/1.0)
+FwdIATStd > 0.319425
+|   BwdPacketLengthMax <= 0.132991: BENIGN (55.0/1.0)
+|   BwdPacketLengthMax > 0.132991: abnormal (55.0)
+
+Number of Leaves  : 	27
+
+Size of the tree : 	53
+
+
+Time taken to build model: 1.18 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.19 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        2032               99.122  %
+Incorrectly Classified Instances        18                0.878  %
+Kappa statistic                          0.819 
+Mean absolute error                      0.01  
+Root mean squared error                  0.0874
+Relative absolute error                 20.9949 %
+Root relative squared error             56.6731 %
+Total Number of Instances             2050     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.995    0.160    0.996      0.995    0.995      0.819    0.960     0.998     BENIGN
+                 0.840    0.005    0.808      0.840    0.824      0.819    0.960     0.807     abnormal
+Weighted Avg.    0.991    0.156    0.991      0.991    0.991      0.819    0.960     0.993     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1990   10 |    a = BENIGN
+    8   42 |    b = abnormal
+
