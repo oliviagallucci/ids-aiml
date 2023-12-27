@@ -1,0 +1,1751 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H 20
+Relation:     anomalyTrainingData
+Instances:    8200
+Attributes:   77
+              FlowDuration
+              TotalFwdPackets
+              TotalBackwardPackets
+              TotalLengthofFwdPackets
+              TotalLengthofBwdPackets
+              FwdPacketLengthMax
+              FwdPacketLengthMin
+              FwdPacketLengthMean
+              FwdPacketLengthStd
+              BwdPacketLengthMax
+              BwdPacketLengthMin
+              BwdPacketLengthMean
+              BwdPacketLengthStd
+              FlowBytes/s
+              FlowPackets/s
+              FlowIATMean
+              FlowIATStd
+              FlowIATMax
+              FlowIATMin
+              FwdIATTotal
+              FwdIATMean
+              FwdIATStd
+              FwdIATMax
+              FwdIATMin
+              BwdIATTotal
+              BwdIATMean
+              BwdIATStd
+              BwdIATMax
+              BwdIATMin
+              FwdPSHFlags
+              BwdPSHFlags
+              FwdURGFlags
+              BwdURGFlags
+              FwdHeaderLength
+              BwdHeaderLength
+              FwdPackets/s
+              BwdPackets/s
+              MinPacketLength
+              MaxPacketLength
+              PacketLengthMean
+              PacketLengthStd
+              PacketLengthVariance
+              FINFlagCount
+              SYNFlagCount
+              RSTFlagCount
+              PSHFlagCount
+              ACKFlagCount
+              URGFlagCount
+              CWEFlagCount
+              ECEFlagCount
+              Down/UpRatio
+              AveragePacketSize
+              AvgFwdSegmentSize
+              AvgBwdSegmentSize
+              FwdAvgBytes/Bulk
+              FwdAvgPackets/Bulk
+              FwdAvgBulkRate
+              BwdAvgBytes/Bulk
+              BwdAvgPackets/Bulk
+              BwdAvgBulkRate
+              SubflowFwdPackets
+              SubflowFwdBytes
+              SubflowBwdPackets
+              SubflowBwdBytes
+              Init_Win_bytes_forward
+              Init_Win_bytes_backward
+              act_data_pkt_fwd
+              min_seg_size_forward
+              ActiveMean
+              ActiveStd
+              ActiveMax
+              ActiveMin
+              IdleMean
+              IdleStd
+              IdleMax
+              IdleMin
+              Label
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -14.496719787123023
+    Node 2    1.8570936711553379
+    Node 3    0.10288495412128636
+    Node 4    2.487132616727528
+    Node 5    -3.4182596801052134
+    Node 6    3.051107507067619
+    Node 7    1.3138161503255785
+    Node 8    -0.8837711825259554
+    Node 9    0.8788775769176953
+    Node 10    4.3108224247897775
+    Node 11    3.1878983133974885
+    Node 12    3.5763783879846516
+    Node 13    0.9910803109133982
+    Node 14    1.9419932232306556
+    Node 15    1.4604804255841601
+    Node 16    -2.4953603674165583
+    Node 17    -4.143103935486478
+    Node 18    4.396252907406026
+    Node 19    2.6201210371215167
+    Node 20    4.18980688110395
+    Node 21    0.8648730977631638
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    14.512545790505268
+    Node 2    -1.8565568242157415
+    Node 3    -0.10710491560264457
+    Node 4    -2.483943805059026
+    Node 5    3.401683916280104
+    Node 6    -3.0505264943899792
+    Node 7    -1.307218600032764
+    Node 8    0.883262560860914
+    Node 9    -0.8791167411211036
+    Node 10    -4.311652728437139
+    Node 11    -3.180928961557763
+    Node 12    -3.5754224697801784
+    Node 13    -0.9889271522520279
+    Node 14    -1.9486822094784577
+    Node 15    -1.4672535354930754
+    Node 16    2.495315363483597
+    Node 17    4.144300543841039
+    Node 18    -4.3961267833023605
+    Node 19    -2.620478445838023
+    Node 20    -4.188557532886994
+    Node 21    -0.8636255421045002
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    1.404176623337906
+    Attrib FlowDuration    1.1970139954295502
+    Attrib TotalFwdPackets    -1.899291649629587
+    Attrib TotalBackwardPackets    -0.5436807395380773
+    Attrib TotalLengthofFwdPackets    -0.8900650184083148
+    Attrib TotalLengthofBwdPackets    -0.9885210985115788
+    Attrib FwdPacketLengthMax    0.8661766740522184
+    Attrib FwdPacketLengthMin    -1.3083477799666279
+    Attrib FwdPacketLengthMean    1.9326108118222316
+    Attrib FwdPacketLengthStd    2.540635049695681
+    Attrib BwdPacketLengthMax    1.1805399215635413
+    Attrib BwdPacketLengthMin    -0.7336565614679256
+    Attrib BwdPacketLengthMean    1.954786430291908
+    Attrib BwdPacketLengthStd    3.431088252420947
+    Attrib FlowBytes/s    0.020762617299551825
+    Attrib FlowPackets/s    -0.022838892425988435
+    Attrib FlowIATMean    -2.080181527828839
+    Attrib FlowIATStd    -5.433761259346678
+    Attrib FlowIATMax    -1.8515181426113232
+    Attrib FlowIATMin    -0.5655395855003968
+    Attrib FwdIATTotal    0.512193343245508
+    Attrib FwdIATMean    -0.7997175938785525
+    Attrib FwdIATStd    -4.524371041830736
+    Attrib FwdIATMax    -2.228827599494155
+    Attrib FwdIATMin    -0.5782999163549462
+    Attrib BwdIATTotal    3.6910726656614474
+    Attrib BwdIATMean    1.7066573527042126
+    Attrib BwdIATStd    -0.8929453378339168
+    Attrib BwdIATMax    2.0797151075433833
+    Attrib BwdIATMin    1.4632117623221197
+    Attrib FwdPSHFlags    0.10054268241076518
+    Attrib BwdPSHFlags    -0.02753910757675503
+    Attrib FwdURGFlags    -1.1135000619099376
+    Attrib BwdURGFlags    -0.041510097342857946
+    Attrib FwdHeaderLength    0.460402791287324
+    Attrib BwdHeaderLength    0.7278082635027393
+    Attrib FwdPackets/s    0.20265776715057532
+    Attrib BwdPackets/s    -3.7165055813017096
+    Attrib MinPacketLength    -2.665303145988775
+    Attrib MaxPacketLength    0.9563970686591696
+    Attrib PacketLengthMean    2.8609527092933624
+    Attrib PacketLengthStd    2.7028360004557266
+    Attrib PacketLengthVariance    -1.9397560844501427
+    Attrib FINFlagCount    -10.657637285013095
+    Attrib SYNFlagCount    0.1152977104355762
+    Attrib RSTFlagCount    -1.340347236592104
+    Attrib PSHFlagCount    0.5906898694015746
+    Attrib ACKFlagCount    -4.953653501177169
+    Attrib URGFlagCount    0.3277469094228186
+    Attrib CWEFlagCount    -1.1682320104986303
+    Attrib ECEFlagCount    -1.4154392785742185
+    Attrib Down/UpRatio    2.417731153233383
+    Attrib AveragePacketSize    2.982131870801541
+    Attrib AvgFwdSegmentSize    1.9498073787527401
+    Attrib AvgBwdSegmentSize    1.8907250097188613
+    Attrib FwdAvgBytes/Bulk    -0.0028290228110224996
+    Attrib FwdAvgPackets/Bulk    -0.005960390084959112
+    Attrib FwdAvgBulkRate    -0.0323330310614687
+    Attrib BwdAvgBytes/Bulk    -0.04661691390540075
+    Attrib BwdAvgPackets/Bulk    0.027984292403648123
+    Attrib BwdAvgBulkRate    -0.04569436761786928
+    Attrib SubflowFwdPackets    -1.9296074331521644
+    Attrib SubflowFwdBytes    -0.845456481382993
+    Attrib SubflowBwdPackets    -0.519953441549506
+    Attrib SubflowBwdBytes    -0.9054515179846003
+    Attrib Init_Win_bytes_forward    -0.8571372974526782
+    Attrib Init_Win_bytes_backward    4.562730374192376
+    Attrib act_data_pkt_fwd    -2.217309498673479
+    Attrib min_seg_size_forward    -19.887133586290716
+    Attrib ActiveMean    1.274895044421647
+    Attrib ActiveStd    -1.201430709079675
+    Attrib ActiveMax    -0.5816389206382432
+    Attrib ActiveMin    1.2273781587581936
+    Attrib IdleMean    -2.203012021827862
+    Attrib IdleStd    -1.3235052807398
+    Attrib IdleMax    -2.2282499713310697
+    Attrib IdleMin    -2.2494870598827474
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    1.589563133691352
+    Attrib FlowDuration    3.6588169604705674
+    Attrib TotalFwdPackets    -0.47790834885965916
+    Attrib TotalBackwardPackets    -0.5666200318137985
+    Attrib TotalLengthofFwdPackets    -0.9443946399037098
+    Attrib TotalLengthofBwdPackets    -0.8185231294902966
+    Attrib FwdPacketLengthMax    0.6256961077761131
+    Attrib FwdPacketLengthMin    -1.5531495858563131
+    Attrib FwdPacketLengthMean    1.4041458662422721
+    Attrib FwdPacketLengthStd    1.9867315867892021
+    Attrib BwdPacketLengthMax    -0.28993843692355575
+    Attrib BwdPacketLengthMin    -1.756097721119545
+    Attrib BwdPacketLengthMean    1.0634489082947196
+    Attrib BwdPacketLengthStd    1.9896113669382853
+    Attrib FlowBytes/s    -0.022734457621767925
+    Attrib FlowPackets/s    0.0369855403907105
+    Attrib FlowIATMean    -0.8523014816657636
+    Attrib FlowIATStd    -1.8743616433646269
+    Attrib FlowIATMax    -0.04039086342299577
+    Attrib FlowIATMin    -1.1467672865280447
+    Attrib FwdIATTotal    3.126359940595144
+    Attrib FwdIATMean    -0.1764233227817878
+    Attrib FwdIATStd    -1.6202693629385505
+    Attrib FwdIATMax    -0.3955110121143142
+    Attrib FwdIATMin    -0.892656252028492
+    Attrib BwdIATTotal    4.903406933876123
+    Attrib BwdIATMean    1.9579432257608806
+    Attrib BwdIATStd    -1.5419209048983105
+    Attrib BwdIATMax    1.9445161251884584
+    Attrib BwdIATMin    1.9780247400857052
+    Attrib FwdPSHFlags    0.19050185062745054
+    Attrib BwdPSHFlags    -0.033435519307613216
+    Attrib FwdURGFlags    -1.5103711973082523
+    Attrib BwdURGFlags    -0.04432770480724814
+    Attrib FwdHeaderLength    2.1816722809540376
+    Attrib BwdHeaderLength    2.2621935048724806
+    Attrib FwdPackets/s    1.4252567341242994
+    Attrib BwdPackets/s    -4.083973046247396
+    Attrib MinPacketLength    -3.0821301126829983
+    Attrib MaxPacketLength    -0.8049578846135813
+    Attrib PacketLengthMean    0.474198088786483
+    Attrib PacketLengthStd    0.4137505512868356
+    Attrib PacketLengthVariance    -2.943266012686745
+    Attrib FINFlagCount    -4.327528336617284
+    Attrib SYNFlagCount    0.20174701638562975
+    Attrib RSTFlagCount    -0.9238678417080531
+    Attrib PSHFlagCount    -1.2418548330724093
+    Attrib ACKFlagCount    -1.4687865547148626
+    Attrib URGFlagCount    -0.07462667918141172
+    Attrib CWEFlagCount    -1.4617391219595668
+    Attrib ECEFlagCount    -0.9449844869887832
+    Attrib Down/UpRatio    -0.2436324142526316
+    Attrib AveragePacketSize    0.12993693400097867
+    Attrib AvgFwdSegmentSize    1.4166240178740075
+    Attrib AvgBwdSegmentSize    0.9745905879078699
+    Attrib FwdAvgBytes/Bulk    0.015661075317803794
+    Attrib FwdAvgPackets/Bulk    0.0058040956588484155
+    Attrib FwdAvgBulkRate    0.015150963632650921
+    Attrib BwdAvgBytes/Bulk    -0.009810985896333134
+    Attrib BwdAvgPackets/Bulk    0.02553843072092893
+    Attrib BwdAvgBulkRate    -0.03184102435318402
+    Attrib SubflowFwdPackets    -0.4874819723070092
+    Attrib SubflowFwdBytes    -0.9207971662023866
+    Attrib SubflowBwdPackets    -0.5813634786486112
+    Attrib SubflowBwdBytes    -0.8534503711106799
+    Attrib Init_Win_bytes_forward    4.740797539482287
+    Attrib Init_Win_bytes_backward    3.067829138294656
+    Attrib act_data_pkt_fwd    -1.3069605379441396
+    Attrib min_seg_size_forward    -9.049755673438629
+    Attrib ActiveMean    -1.9955163187969358
+    Attrib ActiveStd    -1.2738136096909176
+    Attrib ActiveMax    -1.6132396580515753
+    Attrib ActiveMin    -2.2510855745286484
+    Attrib IdleMean    -1.0023730398269188
+    Attrib IdleStd    -1.7792180374945084
+    Attrib IdleMax    -1.2677775983861819
+    Attrib IdleMin    -0.9906692747314504
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    1.167303341029435
+    Attrib FlowDuration    1.8886087093330552
+    Attrib TotalFwdPackets    -0.31765279764104765
+    Attrib TotalBackwardPackets    -0.4696506759298336
+    Attrib TotalLengthofFwdPackets    -0.6295629603823555
+    Attrib TotalLengthofBwdPackets    -0.4759658584824444
+    Attrib FwdPacketLengthMax    0.83362482529369
+    Attrib FwdPacketLengthMin    -0.9659820689072848
+    Attrib FwdPacketLengthMean    1.6479412598773253
+    Attrib FwdPacketLengthStd    2.0713663608809703
+    Attrib BwdPacketLengthMax    -1.0033136461564591
+    Attrib BwdPacketLengthMin    -0.46201105659665986
+    Attrib BwdPacketLengthMean    1.1542815242833737
+    Attrib BwdPacketLengthStd    1.0915807319225403
+    Attrib FlowBytes/s    -0.010115371897607028
+    Attrib FlowPackets/s    0.044061344284106824
+    Attrib FlowIATMean    -0.6766386879437902
+    Attrib FlowIATStd    -1.0351654658205478
+    Attrib FlowIATMax    -0.05740713957937413
+    Attrib FlowIATMin    -0.9219706906760786
+    Attrib FwdIATTotal    1.3311987853554703
+    Attrib FwdIATMean    -0.2817663502114236
+    Attrib FwdIATStd    -1.074486764481467
+    Attrib FwdIATMax    -0.4728955805097515
+    Attrib FwdIATMin    -0.636974566546287
+    Attrib BwdIATTotal    1.4833938091077667
+    Attrib BwdIATMean    0.7617249164054685
+    Attrib BwdIATStd    -2.0789356764823674
+    Attrib BwdIATMax    -0.23105524186816576
+    Attrib BwdIATMin    0.9115291938671309
+    Attrib FwdPSHFlags    1.0715895765510965
+    Attrib BwdPSHFlags    -0.011041005720648298
+    Attrib FwdURGFlags    -1.1005234969231654
+    Attrib BwdURGFlags    -0.03277822885265379
+    Attrib FwdHeaderLength    2.6806562955701865
+    Attrib BwdHeaderLength    2.6654499736957034
+    Attrib FwdPackets/s    0.025117251856750813
+    Attrib BwdPackets/s    -2.5691335422667345
+    Attrib MinPacketLength    -1.6654097271582975
+    Attrib MaxPacketLength    -1.3871513965493265
+    Attrib PacketLengthMean    0.068967055844552
+    Attrib PacketLengthStd    -0.18192728465747893
+    Attrib PacketLengthVariance    -2.58458487432204
+    Attrib FINFlagCount    -5.999942605884107
+    Attrib SYNFlagCount    1.0703737245847553
+    Attrib RSTFlagCount    -0.876618521434607
+    Attrib PSHFlagCount    -3.7738485643285986
+    Attrib ACKFlagCount    -3.462239432352147
+    Attrib URGFlagCount    0.15235436590646503
+    Attrib CWEFlagCount    -1.059120041839746
+    Attrib ECEFlagCount    -0.8937629284121722
+    Attrib Down/UpRatio    -0.6323446579865271
+    Attrib AveragePacketSize    -0.2046445644401151
+    Attrib AvgFwdSegmentSize    1.6362095467858797
+    Attrib AvgBwdSegmentSize    1.0914866777220191
+    Attrib FwdAvgBytes/Bulk    -0.012412459086128466
+    Attrib FwdAvgPackets/Bulk    0.03821385416882525
+    Attrib FwdAvgBulkRate    -0.010022061656083249
+    Attrib BwdAvgBytes/Bulk    0.009480340203300894
+    Attrib BwdAvgPackets/Bulk    -0.017524037703203953
+    Attrib BwdAvgBulkRate    -0.0064353731791750995
+    Attrib SubflowFwdPackets    -0.2916286519446139
+    Attrib SubflowFwdBytes    -0.5672522895318822
+    Attrib SubflowBwdPackets    -0.5116864157868405
+    Attrib SubflowBwdBytes    -0.5652470438087233
+    Attrib Init_Win_bytes_forward    2.485738493620022
+    Attrib Init_Win_bytes_backward    2.2374210643512202
+    Attrib act_data_pkt_fwd    -0.9131216482434305
+    Attrib min_seg_size_forward    -4.336642143746669
+    Attrib ActiveMean    -0.8642772944600791
+    Attrib ActiveStd    -0.7742022934969219
+    Attrib ActiveMax    -1.0339538597133355
+    Attrib ActiveMin    -1.148713818070894
+    Attrib IdleMean    -0.6300723343646008
+    Attrib IdleStd    -1.447321770495015
+    Attrib IdleMax    -0.868474864049904
+    Attrib IdleMin    -0.49917982068788813
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    0.5937853577826585
+    Attrib FlowDuration    0.2374353751952513
+    Attrib TotalFwdPackets    -0.2563956908356374
+    Attrib TotalBackwardPackets    -0.1959147305503626
+    Attrib TotalLengthofFwdPackets    -0.29562319455628866
+    Attrib TotalLengthofBwdPackets    -0.06856501389251408
+    Attrib FwdPacketLengthMax    0.2983863618332856
+    Attrib FwdPacketLengthMin    -0.4774236649404264
+    Attrib FwdPacketLengthMean    0.5387247945357786
+    Attrib FwdPacketLengthStd    0.7162728585096423
+    Attrib BwdPacketLengthMax    -0.5747788395121002
+    Attrib BwdPacketLengthMin    0.04483256652703593
+    Attrib BwdPacketLengthMean    0.9955341189386117
+    Attrib BwdPacketLengthStd    0.6432721982002124
+    Attrib FlowBytes/s    0.04593241072544893
+    Attrib FlowPackets/s    0.04524332409279895
+    Attrib FlowIATMean    -0.7744637900524464
+    Attrib FlowIATStd    -1.444531922697533
+    Attrib FlowIATMax    -0.6918886343243623
+    Attrib FlowIATMin    -0.5137026451817391
+    Attrib FwdIATTotal    0.030862095623875745
+    Attrib FwdIATMean    -0.5034313111287348
+    Attrib FwdIATStd    -1.3644024932485874
+    Attrib FwdIATMax    -0.7463997608387647
+    Attrib FwdIATMin    -0.3149949578994821
+    Attrib BwdIATTotal    0.8947569976178666
+    Attrib BwdIATMean    -0.11125095326432254
+    Attrib BwdIATStd    -0.3453973694487607
+    Attrib BwdIATMax    0.2705067033425018
+    Attrib BwdIATMin    -0.25568970675421415
+    Attrib FwdPSHFlags    0.49087867943723784
+    Attrib BwdPSHFlags    -0.03421242994528015
+    Attrib FwdURGFlags    -0.6473748849276432
+    Attrib BwdURGFlags    -0.01085747551897949
+    Attrib FwdHeaderLength    1.5725482573894431
+    Attrib BwdHeaderLength    1.6411269673222182
+    Attrib FwdPackets/s    -0.5972674254452518
+    Attrib BwdPackets/s    -0.8707328131967227
+    Attrib MinPacketLength    -0.48797831535815084
+    Attrib MaxPacketLength    -1.057954904433113
+    Attrib PacketLengthMean    -0.10406307209646988
+    Attrib PacketLengthStd    -0.34158389655111515
+    Attrib PacketLengthVariance    -1.5779409698884785
+    Attrib FINFlagCount    -2.6501784251834293
+    Attrib SYNFlagCount    0.4849681567570796
+    Attrib RSTFlagCount    -0.5037649335819613
+    Attrib PSHFlagCount    -2.8325180549741154
+    Attrib ACKFlagCount    -2.718471266728275
+    Attrib URGFlagCount    1.441955884805129
+    Attrib CWEFlagCount    -0.5951323834834547
+    Attrib ECEFlagCount    -0.5609632607604413
+    Attrib Down/UpRatio    -0.3146356656274321
+    Attrib AveragePacketSize    -0.25044964329454833
+    Attrib AvgFwdSegmentSize    0.5248866740555261
+    Attrib AvgBwdSegmentSize    0.9993785605686406
+    Attrib FwdAvgBytes/Bulk    -6.875553183842906E-4
+    Attrib FwdAvgPackets/Bulk    0.036261609255343594
+    Attrib FwdAvgBulkRate    -0.006256438591261647
+    Attrib BwdAvgBytes/Bulk    0.03336493939376678
+    Attrib BwdAvgPackets/Bulk    4.140529484039229E-4
+    Attrib BwdAvgBulkRate    0.017939263601477323
+    Attrib SubflowFwdPackets    -0.279439374519722
+    Attrib SubflowFwdBytes    -0.3134766695450782
+    Attrib SubflowBwdPackets    -0.12764247407476814
+    Attrib SubflowBwdBytes    -0.028897852057495337
+    Attrib Init_Win_bytes_forward    0.5310117325851667
+    Attrib Init_Win_bytes_backward    1.1082043282674716
+    Attrib act_data_pkt_fwd    -0.5825838340103165
+    Attrib min_seg_size_forward    -2.025868786136394
+    Attrib ActiveMean    0.05259062915950699
+    Attrib ActiveStd    -0.48240011451074155
+    Attrib ActiveMax    -0.4086743913646442
+    Attrib ActiveMin    -0.06187303534540983
+    Attrib IdleMean    -1.217815489042782
+    Attrib IdleStd    -0.5327460843230606
+    Attrib IdleMax    -1.1416309558589979
+    Attrib IdleMin    -1.24779273616789
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    1.378423037344866
+    Attrib FlowDuration    3.972622334211592
+    Attrib TotalFwdPackets    -1.3681669333720659
+    Attrib TotalBackwardPackets    -0.6085516527487721
+    Attrib TotalLengthofFwdPackets    -0.66357514326636
+    Attrib TotalLengthofBwdPackets    -0.7278406368841908
+    Attrib FwdPacketLengthMax    0.8811030733262906
+    Attrib FwdPacketLengthMin    -1.314502409848395
+    Attrib FwdPacketLengthMean    1.8244864679586545
+    Attrib FwdPacketLengthStd    2.3601514426409342
+    Attrib BwdPacketLengthMax    -0.5925834578601926
+    Attrib BwdPacketLengthMin    -1.177227294393137
+    Attrib BwdPacketLengthMean    1.263062312075648
+    Attrib BwdPacketLengthStd    1.8781604365334008
+    Attrib FlowBytes/s    -0.006410228147348707
+    Attrib FlowPackets/s    0.0068598959768087844
+    Attrib FlowIATMean    -0.9064943484278742
+    Attrib FlowIATStd    -2.1625917334728095
+    Attrib FlowIATMax    -0.37300563195523917
+    Attrib FlowIATMin    -1.0065118046784824
+    Attrib FwdIATTotal    3.5872955809180005
+    Attrib FwdIATMean    0.04924628907727896
+    Attrib FwdIATStd    -1.9665590142129141
+    Attrib FwdIATMax    -0.7096553102427731
+    Attrib FwdIATMin    -0.6775559768008972
+    Attrib BwdIATTotal    5.0874700024032204
+    Attrib BwdIATMean    1.8300398698844027
+    Attrib BwdIATStd    -1.3770844243064295
+    Attrib BwdIATMax    1.590694099830086
+    Attrib BwdIATMin    1.7772396547606104
+    Attrib FwdPSHFlags    1.1161077774435113
+    Attrib BwdPSHFlags    -0.010622330047859008
+    Attrib FwdURGFlags    -1.3800416705370093
+    Attrib BwdURGFlags    -0.04842258982743768
+    Attrib FwdHeaderLength    3.5811712897207424
+    Attrib BwdHeaderLength    3.72048409676751
+    Attrib FwdPackets/s    2.045020643618789
+    Attrib BwdPackets/s    -2.559181662560571
+    Attrib MinPacketLength    -2.3273949598640633
+    Attrib MaxPacketLength    -1.0822194410630541
+    Attrib PacketLengthMean    0.45952126209772304
+    Attrib PacketLengthStd    0.5697918001806721
+    Attrib PacketLengthVariance    -2.5739134078034898
+    Attrib FINFlagCount    -3.380530152286116
+    Attrib SYNFlagCount    1.1520142580288923
+    Attrib RSTFlagCount    -1.2182914993530998
+    Attrib PSHFlagCount    -1.3087762140525177
+    Attrib ACKFlagCount    -1.020523314033977
+    Attrib URGFlagCount    0.29442064595448897
+    Attrib CWEFlagCount    -1.3720506626707865
+    Attrib ECEFlagCount    -1.2832104238482225
+    Attrib Down/UpRatio    -0.5534768904526625
+    Attrib AveragePacketSize    0.25082655688300515
+    Attrib AvgFwdSegmentSize    1.7919755057610776
+    Attrib AvgBwdSegmentSize    1.30129137511692
+    Attrib FwdAvgBytes/Bulk    -0.04884211141913807
+    Attrib FwdAvgPackets/Bulk    0.0384618388013096
+    Attrib FwdAvgBulkRate    0.0464563494829877
+    Attrib BwdAvgBytes/Bulk    6.006108075758548E-4
+    Attrib BwdAvgPackets/Bulk    -0.04499669756661262
+    Attrib BwdAvgBulkRate    -0.019953003267777537
+    Attrib SubflowFwdPackets    -1.2983711294081641
+    Attrib SubflowFwdBytes    -0.6713928975811231
+    Attrib SubflowBwdPackets    -0.5926144032045296
+    Attrib SubflowBwdBytes    -0.6900912789267583
+    Attrib Init_Win_bytes_forward    3.212258103148783
+    Attrib Init_Win_bytes_backward    2.7594917164747264
+    Attrib act_data_pkt_fwd    -1.7600721643173478
+    Attrib min_seg_size_forward    -9.80121576429459
+    Attrib ActiveMean    -0.5390362401504625
+    Attrib ActiveStd    -1.1888475888983963
+    Attrib ActiveMax    -1.1849567976427557
+    Attrib ActiveMin    -0.5345110509133671
+    Attrib IdleMean    -0.8588942518722166
+    Attrib IdleStd    -1.311226003636896
+    Attrib IdleMax    -1.0343203464388928
+    Attrib IdleMin    -1.0900328499453886
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    0.19547711062696432
+    Attrib FlowDuration    0.20838756114089327
+    Attrib TotalFwdPackets    0.5990589964888112
+    Attrib TotalBackwardPackets    0.4744876705314875
+    Attrib TotalLengthofFwdPackets    0.19511585091291445
+    Attrib TotalLengthofBwdPackets    0.6068983764319401
+    Attrib FwdPacketLengthMax    0.8960038939743306
+    Attrib FwdPacketLengthMin    -0.04610407905251194
+    Attrib FwdPacketLengthMean    1.206507547167842
+    Attrib FwdPacketLengthStd    1.357125189852708
+    Attrib BwdPacketLengthMax    -1.9196620393953807
+    Attrib BwdPacketLengthMin    0.03085285944244394
+    Attrib BwdPacketLengthMean    -0.08256650582279332
+    Attrib BwdPacketLengthStd    -1.5613354791145406
+    Attrib FlowBytes/s    -0.028706283203963068
+    Attrib FlowPackets/s    -0.03884346509905162
+    Attrib FlowIATMean    -0.6080879094027717
+    Attrib FlowIATStd    -0.0896840244330518
+    Attrib FlowIATMax    -0.27941457137442943
+    Attrib FlowIATMin    -0.6331499285543727
+    Attrib FwdIATTotal    0.12277249016485453
+    Attrib FwdIATMean    -0.2601230415772696
+    Attrib FwdIATStd    -0.16970787621284755
+    Attrib FwdIATMax    -0.33670225279729177
+    Attrib FwdIATMin    -0.3520900586528698
+    Attrib BwdIATTotal    0.3357982627396039
+    Attrib BwdIATMean    0.11677673305607471
+    Attrib BwdIATStd    -0.23024637061251518
+    Attrib BwdIATMax    -0.07521370043328286
+    Attrib BwdIATMin    0.011904555848879535
+    Attrib FwdPSHFlags    0.31362270456372854
+    Attrib BwdPSHFlags    0.028224689207207346
+    Attrib FwdURGFlags    -0.1887919268117147
+    Attrib BwdURGFlags    0.03584801467397192
+    Attrib FwdHeaderLength    0.26221741944294114
+    Attrib BwdHeaderLength    0.35337860372674496
+    Attrib FwdPackets/s    -1.8157544188089583
+    Attrib BwdPackets/s    0.24219998581159488
+    Attrib MinPacketLength    -0.05859327382702291
+    Attrib MaxPacketLength    -1.8103000733102916
+    Attrib PacketLengthMean    -1.535822095751209
+    Attrib PacketLengthStd    -1.9969759769703959
+    Attrib PacketLengthVariance    -1.4755697046125762
+    Attrib FINFlagCount    -0.856779237504021
+    Attrib SYNFlagCount    0.32549442830384157
+    Attrib RSTFlagCount    -0.1486939372956378
+    Attrib PSHFlagCount    1.3165099713603512
+    Attrib ACKFlagCount    -0.25776929881558835
+    Attrib URGFlagCount    0.2763271301293715
+    Attrib CWEFlagCount    -0.1823768616746339
+    Attrib ECEFlagCount    -0.12776213307651516
+    Attrib Down/UpRatio    -1.8592166240392696
+    Attrib AveragePacketSize    -2.0097353361548542
+    Attrib AvgFwdSegmentSize    1.2262047518481558
+    Attrib AvgBwdSegmentSize    -0.08434169729536894
+    Attrib FwdAvgBytes/Bulk    0.006114787403947677
+    Attrib FwdAvgPackets/Bulk    -0.0301446229631702
+    Attrib FwdAvgBulkRate    0.036788171911374706
+    Attrib BwdAvgBytes/Bulk    -0.0017916145464815653
+    Attrib BwdAvgPackets/Bulk    -0.019530024575995397
+    Attrib BwdAvgBulkRate    -0.01721223823311257
+    Attrib SubflowFwdPackets    0.5726153920392284
+    Attrib SubflowFwdBytes    0.14942482942738433
+    Attrib SubflowBwdPackets    0.442031851094661
+    Attrib SubflowBwdBytes    0.5439783153820077
+    Attrib Init_Win_bytes_forward    1.7139360710969884
+    Attrib Init_Win_bytes_backward    0.23049983519639314
+    Attrib act_data_pkt_fwd    0.07706375862441424
+    Attrib min_seg_size_forward    -0.21954859898718426
+    Attrib ActiveMean    0.20811967588807326
+    Attrib ActiveStd    -0.06966636040476376
+    Attrib ActiveMax    -0.019320491608841944
+    Attrib ActiveMin    0.21707585449480893
+    Attrib IdleMean    -0.26967632637822564
+    Attrib IdleStd    -0.11933995869103149
+    Attrib IdleMax    -0.18276862577675437
+    Attrib IdleMin    -0.26477955281770926
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    1.0742423813476707
+    Attrib FlowDuration    2.8729007755777283
+    Attrib TotalFwdPackets    -1.3245751454970167
+    Attrib TotalBackwardPackets    -0.3933660115810676
+    Attrib TotalLengthofFwdPackets    -0.6081245502016407
+    Attrib TotalLengthofBwdPackets    -0.4656182160905168
+    Attrib FwdPacketLengthMax    0.8070566110966367
+    Attrib FwdPacketLengthMin    -1.1034155503853105
+    Attrib FwdPacketLengthMean    1.6049707322197893
+    Attrib FwdPacketLengthStd    2.069933431848551
+    Attrib BwdPacketLengthMax    -0.9975003543010159
+    Attrib BwdPacketLengthMin    -0.27361147286824783
+    Attrib BwdPacketLengthMean    1.2089962918021881
+    Attrib BwdPacketLengthStd    1.0387041956219427
+    Attrib FlowBytes/s    -0.01659521322334965
+    Attrib FlowPackets/s    -0.04140457948159079
+    Attrib FlowIATMean    -1.6060424085666196
+    Attrib FlowIATStd    -4.202083787428036
+    Attrib FlowIATMax    -1.8108808245529315
+    Attrib FlowIATMin    -0.6193899374991524
+    Attrib FwdIATTotal    2.4417122069196875
+    Attrib FwdIATMean    -0.43142137041369155
+    Attrib FwdIATStd    -3.8656745345708297
+    Attrib FwdIATMax    -2.044315053287604
+    Attrib FwdIATMin    -0.447134771471022
+    Attrib BwdIATTotal    5.852223642704955
+    Attrib BwdIATMean    2.0324184699393184
+    Attrib BwdIATStd    -0.7680614586186095
+    Attrib BwdIATMax    2.4514771621701827
+    Attrib BwdIATMin    1.8459362875211893
+    Attrib FwdPSHFlags    1.0760261162116684
+    Attrib BwdPSHFlags    0.03565106296727498
+    Attrib FwdURGFlags    -0.9672024609404417
+    Attrib BwdURGFlags    0.04132785843415271
+    Attrib FwdHeaderLength    0.7743738759448664
+    Attrib BwdHeaderLength    0.9863052921127539
+    Attrib FwdPackets/s    -0.6400623503669184
+    Attrib BwdPackets/s    -2.003341629029817
+    Attrib MinPacketLength    -2.2607960670740077
+    Attrib MaxPacketLength    -1.4980372735212577
+    Attrib PacketLengthMean    -0.17261672165802686
+    Attrib PacketLengthStd    -6.313810529953802E-4
+    Attrib PacketLengthVariance    -2.65013346497349
+    Attrib FINFlagCount    -5.402037038747832
+    Attrib SYNFlagCount    1.0072233611351107
+    Attrib RSTFlagCount    -0.7577075083778558
+    Attrib PSHFlagCount    -3.7787968927086424
+    Attrib ACKFlagCount    -2.790764074725402
+    Attrib URGFlagCount    1.605686224096301
+    Attrib CWEFlagCount    -1.0088178728606574
+    Attrib ECEFlagCount    -0.7192529420220614
+    Attrib Down/UpRatio    -0.2292284438376434
+    Attrib AveragePacketSize    -0.17515458695656536
+    Attrib AvgFwdSegmentSize    1.5156071786824958
+    Attrib AvgBwdSegmentSize    1.166746849975489
+    Attrib FwdAvgBytes/Bulk    -0.016052527238111285
+    Attrib FwdAvgPackets/Bulk    0.026459388183015325
+    Attrib FwdAvgBulkRate    -0.022455226734904424
+    Attrib BwdAvgBytes/Bulk    0.02831713833006079
+    Attrib BwdAvgPackets/Bulk    0.04032574261803022
+    Attrib BwdAvgBulkRate    -0.04308946254397361
+    Attrib SubflowFwdPackets    -1.333275579450606
+    Attrib SubflowFwdBytes    -0.6203352415569433
+    Attrib SubflowBwdPackets    -0.3700363105370414
+    Attrib SubflowBwdBytes    -0.4561620933546529
+    Attrib Init_Win_bytes_forward    3.5749604766534357
+    Attrib Init_Win_bytes_backward    2.7442632319857543
+    Attrib act_data_pkt_fwd    -1.6173404428392595
+    Attrib min_seg_size_forward    -4.117152120415031
+    Attrib ActiveMean    0.18760735966440148
+    Attrib ActiveStd    -0.8869622893670153
+    Attrib ActiveMax    -0.6967849683158344
+    Attrib ActiveMin    0.08593528633805135
+    Attrib IdleMean    -1.9870988571371977
+    Attrib IdleStd    -0.8528388569901303
+    Attrib IdleMax    -1.9010492420709546
+    Attrib IdleMin    -2.2937541982314205
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -0.16152171591979259
+    Attrib FlowDuration    -0.689474848748192
+    Attrib TotalFwdPackets    -0.48058204215581496
+    Attrib TotalBackwardPackets    0.2268030007239852
+    Attrib TotalLengthofFwdPackets    0.1419284645669498
+    Attrib TotalLengthofBwdPackets    0.2094938812722972
+    Attrib FwdPacketLengthMax    0.399033370953588
+    Attrib FwdPacketLengthMin    0.13138251695980066
+    Attrib FwdPacketLengthMean    0.5320402018918187
+    Attrib FwdPacketLengthStd    0.5860198913332291
+    Attrib BwdPacketLengthMax    0.04360340184771507
+    Attrib BwdPacketLengthMin    0.5491212549096613
+    Attrib BwdPacketLengthMean    0.4292370847733915
+    Attrib BwdPacketLengthStd    0.2787349294796015
+    Attrib FlowBytes/s    0.011443101968506716
+    Attrib FlowPackets/s    0.04442724416825301
+    Attrib FlowIATMean    -0.740451388813664
+    Attrib FlowIATStd    -2.317959013863342
+    Attrib FlowIATMax    -1.6843962857762051
+    Attrib FlowIATMin    0.22527734555860265
+    Attrib FwdIATTotal    -0.8046383772152401
+    Attrib FwdIATMean    -0.09174063345438804
+    Attrib FwdIATStd    -2.3207493737333684
+    Attrib FwdIATMax    -1.7022283579238302
+    Attrib FwdIATMin    0.3586333890528215
+    Attrib BwdIATTotal    1.4927074165089984
+    Attrib BwdIATMean    0.7742666031976978
+    Attrib BwdIATStd    0.18002896617755393
+    Attrib BwdIATMax    0.7705514653961514
+    Attrib BwdIATMin    0.7377175705368387
+    Attrib FwdPSHFlags    0.986242658566934
+    Attrib BwdPSHFlags    0.021228410166330258
+    Attrib FwdURGFlags    0.1951392820996889
+    Attrib BwdURGFlags    0.0345402009268128
+    Attrib FwdHeaderLength    0.77608078210076
+    Attrib BwdHeaderLength    0.8995598095304379
+    Attrib FwdPackets/s    -0.7901726797110046
+    Attrib BwdPackets/s    0.7532667097256612
+    Attrib MinPacketLength    -0.4298628942178436
+    Attrib MaxPacketLength    0.02991209267740886
+    Attrib PacketLengthMean    0.3339206494301041
+    Attrib PacketLengthStd    0.2579429677492803
+    Attrib PacketLengthVariance    -0.14575328071218543
+    Attrib FINFlagCount    0.8058555039815516
+    Attrib SYNFlagCount    0.9866729089072841
+    Attrib RSTFlagCount    0.11382881881944774
+    Attrib PSHFlagCount    -1.4579383467688862
+    Attrib ACKFlagCount    1.8293423462606522
+    Attrib URGFlagCount    1.1213505082768098
+    Attrib CWEFlagCount    0.16631196143434968
+    Attrib ECEFlagCount    0.15011341051867638
+    Attrib Down/UpRatio    0.8282207166199057
+    Attrib AveragePacketSize    0.45611775314620395
+    Attrib AvgFwdSegmentSize    0.5102438670130471
+    Attrib AvgBwdSegmentSize    0.4787489701937384
+    Attrib FwdAvgBytes/Bulk    0.040118751353131005
+    Attrib FwdAvgPackets/Bulk    0.033818236138540916
+    Attrib FwdAvgBulkRate    -0.0380640818791636
+    Attrib BwdAvgBytes/Bulk    0.023086011556929728
+    Attrib BwdAvgPackets/Bulk    0.008233549124288954
+    Attrib BwdAvgBulkRate    -0.019677205437876356
+    Attrib SubflowFwdPackets    -0.49669378650811097
+    Attrib SubflowFwdBytes    0.14239268175347958
+    Attrib SubflowBwdPackets    0.2668741464053838
+    Attrib SubflowBwdBytes    0.1819689219867841
+    Attrib Init_Win_bytes_forward    0.33489822849442263
+    Attrib Init_Win_bytes_backward    0.9310010877140018
+    Attrib act_data_pkt_fwd    -0.35573956728538814
+    Attrib min_seg_size_forward    0.12848734498479308
+    Attrib ActiveMean    0.3074768669587953
+    Attrib ActiveStd    0.11760583286150911
+    Attrib ActiveMax    0.20055731549918038
+    Attrib ActiveMin    0.31317861443081885
+    Attrib IdleMean    -1.329462615869277
+    Attrib IdleStd    0.15811006037095243
+    Attrib IdleMax    -1.2604769639197502
+    Attrib IdleMin    -1.3979713319722522
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -0.9681602971084764
+    Attrib FlowDuration    -6.655943972159287
+    Attrib TotalFwdPackets    -2.8451216850968115
+    Attrib TotalBackwardPackets    1.341316863501045
+    Attrib TotalLengthofFwdPackets    1.0811992151170533
+    Attrib TotalLengthofBwdPackets    1.492605038489728
+    Attrib FwdPacketLengthMax    1.7853087642382044
+    Attrib FwdPacketLengthMin    0.5748488955265001
+    Attrib FwdPacketLengthMean    2.027368574086334
+    Attrib FwdPacketLengthStd    2.4295253075306844
+    Attrib BwdPacketLengthMax    0.5180576241900576
+    Attrib BwdPacketLengthMin    2.63600839691108
+    Attrib BwdPacketLengthMean    1.9857871914895928
+    Attrib BwdPacketLengthStd    0.9070493452224447
+    Attrib FlowBytes/s    0.026639028112903224
+    Attrib FlowPackets/s    0.036129620239890275
+    Attrib FlowIATMean    -3.38797627491658
+    Attrib FlowIATStd    -10.687037429283702
+    Attrib FlowIATMax    -7.789525493537709
+    Attrib FlowIATMin    1.6735260931628946
+    Attrib FwdIATTotal    -6.862399115761558
+    Attrib FwdIATMean    -0.6712180129466364
+    Attrib FwdIATStd    -11.107004639663142
+    Attrib FwdIATMax    -7.9365711777210555
+    Attrib FwdIATMin    2.5683979882951355
+    Attrib BwdIATTotal    2.5930859726589524
+    Attrib BwdIATMean    1.5474779239981051
+    Attrib BwdIATStd    0.9997349888229199
+    Attrib BwdIATMax    1.6823741169068962
+    Attrib BwdIATMin    1.5090933673650453
+    Attrib FwdPSHFlags    1.5232713853331277
+    Attrib BwdPSHFlags    -0.023739738254098953
+    Attrib FwdURGFlags    0.9439404378096251
+    Attrib BwdURGFlags    -0.023246533163788698
+    Attrib FwdHeaderLength    2.4707139268222433
+    Attrib BwdHeaderLength    3.0593301593137343
+    Attrib FwdPackets/s    11.737647139367342
+    Attrib BwdPackets/s    1.4178397879262394
+    Attrib MinPacketLength    -2.395284211463969
+    Attrib MaxPacketLength    0.20980206554950856
+    Attrib PacketLengthMean    1.1395003054323256
+    Attrib PacketLengthStd    0.9722597758647235
+    Attrib PacketLengthVariance    -0.2435656261958667
+    Attrib FINFlagCount    1.3747676948926375
+    Attrib SYNFlagCount    1.53416532397174
+    Attrib RSTFlagCount    0.9155095561341215
+    Attrib PSHFlagCount    -4.23207262760663
+    Attrib ACKFlagCount    4.209668066522088
+    Attrib URGFlagCount    2.8407403350496603
+    Attrib CWEFlagCount    0.9396572349635232
+    Attrib ECEFlagCount    0.9938857768368932
+    Attrib Down/UpRatio    3.2009503288579655
+    Attrib AveragePacketSize    1.2099914195547088
+    Attrib AvgFwdSegmentSize    2.0898026387186524
+    Attrib AvgBwdSegmentSize    1.9494986382476656
+    Attrib FwdAvgBytes/Bulk    -0.0056047765839069424
+    Attrib FwdAvgPackets/Bulk    0.042228944478468575
+    Attrib FwdAvgBulkRate    0.013267841260383162
+    Attrib BwdAvgBytes/Bulk    0.004050512409163341
+    Attrib BwdAvgPackets/Bulk    0.03680739679614585
+    Attrib BwdAvgBulkRate    0.037894158484530746
+    Attrib SubflowFwdPackets    -2.8531310774057412
+    Attrib SubflowFwdBytes    1.0316769456146182
+    Attrib SubflowBwdPackets    1.3909960018532852
+    Attrib SubflowBwdBytes    1.489516233987002
+    Attrib Init_Win_bytes_forward    0.17112030151246282
+    Attrib Init_Win_bytes_backward    3.81722324521383
+    Attrib act_data_pkt_fwd    -1.732981633365877
+    Attrib min_seg_size_forward    9.234721807972862
+    Attrib ActiveMean    1.3568894332624035
+    Attrib ActiveStd    0.9964318001679319
+    Attrib ActiveMax    1.109192702983846
+    Attrib ActiveMin    1.3541471120001696
+    Attrib IdleMean    -3.841288380599901
+    Attrib IdleStd    0.9916268404103773
+    Attrib IdleMax    -3.883781624262616
+    Attrib IdleMin    -3.9646619212684615
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    0.009839610550181196
+    Attrib FlowDuration    0.11946406843058946
+    Attrib TotalFwdPackets    1.0607230679433433
+    Attrib TotalBackwardPackets    0.6745172379381595
+    Attrib TotalLengthofFwdPackets    0.4531064188346193
+    Attrib TotalLengthofBwdPackets    0.9396809710074121
+    Attrib FwdPacketLengthMax    1.477602445555009
+    Attrib FwdPacketLengthMin    0.027729233090294785
+    Attrib FwdPacketLengthMean    2.0598342885976475
+    Attrib FwdPacketLengthStd    2.236338665323908
+    Attrib BwdPacketLengthMax    -2.6674020594809873
+    Attrib BwdPacketLengthMin    0.20963191000451498
+    Attrib BwdPacketLengthMean    -0.11551370345972022
+    Attrib BwdPacketLengthStd    -2.49178560566101
+    Attrib FlowBytes/s    0.024216585920367018
+    Attrib FlowPackets/s    0.020894267759734936
+    Attrib FlowIATMean    -0.8193547955449679
+    Attrib FlowIATStd    -0.17096505876848292
+    Attrib FlowIATMax    -0.5267877198246647
+    Attrib FlowIATMin    -0.7758223930841819
+    Attrib FwdIATTotal    -0.012220457376500682
+    Attrib FwdIATMean    -0.29883569257307313
+    Attrib FwdIATStd    -0.31201205248349173
+    Attrib FwdIATMax    -0.6636480148330628
+    Attrib FwdIATMin    -0.3685352116212379
+    Attrib BwdIATTotal    0.5125470316548726
+    Attrib BwdIATMean    0.23874561502942332
+    Attrib BwdIATStd    -0.21093983854545797
+    Attrib BwdIATMax    -0.0022070660691404266
+    Attrib BwdIATMin    0.2175060140177905
+    Attrib FwdPSHFlags    0.5744889768545222
+    Attrib BwdPSHFlags    -0.043776187381756794
+    Attrib FwdURGFlags    -0.011181911938884955
+    Attrib BwdURGFlags    -0.032389400638914545
+    Attrib FwdHeaderLength    0.5173356703479312
+    Attrib BwdHeaderLength    0.5552247404901068
+    Attrib FwdPackets/s    -11.344295301947888
+    Attrib BwdPackets/s    2.1120355062072957
+    Attrib MinPacketLength    0.15226701852114236
+    Attrib MaxPacketLength    -2.4274243364306063
+    Attrib PacketLengthMean    -2.212040834155537
+    Attrib PacketLengthStd    -2.695928784692316
+    Attrib PacketLengthVariance    -1.7743307601705351
+    Attrib FINFlagCount    -0.5028098980415696
+    Attrib SYNFlagCount    0.5715067834794051
+    Attrib RSTFlagCount    -0.058469293979595834
+    Attrib PSHFlagCount    2.081036819638842
+    Attrib ACKFlagCount    -0.4337960257683612
+    Attrib URGFlagCount    0.4418951804787063
+    Attrib CWEFlagCount    -0.011889216159859647
+    Attrib ECEFlagCount    -0.08329807073601128
+    Attrib Down/UpRatio    -2.808533177806378
+    Attrib AveragePacketSize    -2.7296610422146634
+    Attrib AvgFwdSegmentSize    2.067782559048207
+    Attrib AvgBwdSegmentSize    -0.16872952014402284
+    Attrib FwdAvgBytes/Bulk    -0.04472462659089698
+    Attrib FwdAvgPackets/Bulk    -9.434371526921559E-5
+    Attrib FwdAvgBulkRate    0.037460876669255
+    Attrib BwdAvgBytes/Bulk    0.00518185717877033
+    Attrib BwdAvgPackets/Bulk    0.03700997699644325
+    Attrib BwdAvgBulkRate    0.00727773136545793
+    Attrib SubflowFwdPackets    1.043986714195319
+    Attrib SubflowFwdBytes    0.375034682490883
+    Attrib SubflowBwdPackets    0.7338390405394853
+    Attrib SubflowBwdBytes    0.9147831322360539
+    Attrib Init_Win_bytes_forward    3.4862366104860256
+    Attrib Init_Win_bytes_backward    0.5916515768589328
+    Attrib act_data_pkt_fwd    0.24905280019294246
+    Attrib min_seg_size_forward    -1.168378193292057
+    Attrib ActiveMean    0.5328634656920078
+    Attrib ActiveStd    -0.023092816684891097
+    Attrib ActiveMax    0.16407892089065143
+    Attrib ActiveMin    0.5749311997233083
+    Attrib IdleMean    -0.43355155752706176
+    Attrib IdleStd    0.07649749526286914
+    Attrib IdleMax    -0.4069114183537567
+    Attrib IdleMin    -0.48779059544182957
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -0.36009664051314183
+    Attrib FlowDuration    -1.5298227485369005
+    Attrib TotalFwdPackets    -2.977998873752242
+    Attrib TotalBackwardPackets    0.6646525676457242
+    Attrib TotalLengthofFwdPackets    0.5273153072534051
+    Attrib TotalLengthofBwdPackets    0.6321444883488232
+    Attrib FwdPacketLengthMax    0.9017224356246394
+    Attrib FwdPacketLengthMin    0.17584780728073787
+    Attrib FwdPacketLengthMean    1.139257583445287
+    Attrib FwdPacketLengthStd    1.4016750682062462
+    Attrib BwdPacketLengthMax    0.17637256998465217
+    Attrib BwdPacketLengthMin    1.6716704944892429
+    Attrib BwdPacketLengthMean    0.9731950959185953
+    Attrib BwdPacketLengthStd    0.44969243036340484
+    Attrib FlowBytes/s    -0.02691338554890751
+    Attrib FlowPackets/s    -0.03967331054138822
+    Attrib FlowIATMean    -2.798582469060995
+    Attrib FlowIATStd    -8.93911428353831
+    Attrib FlowIATMax    -6.215951539255181
+    Attrib FlowIATMin    0.925027612660073
+    Attrib FwdIATTotal    -1.7047679863712086
+    Attrib FwdIATMean    -0.2663226237029092
+    Attrib FwdIATStd    -8.883064271127855
+    Attrib FwdIATMax    -6.301033122152897
+    Attrib FwdIATMin    1.400291124497185
+    Attrib BwdIATTotal    6.5911544453765325
+    Attrib BwdIATMean    2.9127700734069646
+    Attrib BwdIATStd    0.5182679748817814
+    Attrib BwdIATMax    3.072087602260675
+    Attrib BwdIATMin    2.886127304094928
+    Attrib FwdPSHFlags    0.9460383603565965
+    Attrib BwdPSHFlags    0.011266310797838797
+    Attrib FwdURGFlags    0.44854076635146006
+    Attrib BwdURGFlags    -0.019129131468523932
+    Attrib FwdHeaderLength    1.1656125581571877
+    Attrib BwdHeaderLength    1.5850784112178253
+    Attrib FwdPackets/s    4.759160871387071
+    Attrib BwdPackets/s    0.9473926621641278
+    Attrib MinPacketLength    -2.2369378925195913
+    Attrib MaxPacketLength    0.17483171802127231
+    Attrib PacketLengthMean    0.6640896286700949
+    Attrib PacketLengthStd    0.6847869377762439
+    Attrib PacketLengthVariance    -0.16164427751513888
+    Attrib FINFlagCount    2.951744107792525
+    Attrib SYNFlagCount    0.9268045837828243
+    Attrib RSTFlagCount    0.4004937556978952
+    Attrib PSHFlagCount    -6.49243006636219
+    Attrib ACKFlagCount    -0.6865437915307969
+    Attrib URGFlagCount    1.8658821460777169
+    Attrib CWEFlagCount    0.4665251291174496
+    Attrib ECEFlagCount    0.4763905216545129
+    Attrib Down/UpRatio    2.0481058644100703
+    Attrib AveragePacketSize    0.7720938882444711
+    Attrib AvgFwdSegmentSize    1.1894694138840096
+    Attrib AvgBwdSegmentSize    1.0363661470197725
+    Attrib FwdAvgBytes/Bulk    -0.023074880459061798
+    Attrib FwdAvgPackets/Bulk    0.028105477506213436
+    Attrib FwdAvgBulkRate    -0.02114686358133935
+    Attrib BwdAvgBytes/Bulk    -0.004387822946639822
+    Attrib BwdAvgPackets/Bulk    -0.015581543779664676
+    Attrib BwdAvgBulkRate    -0.004994060506863032
+    Attrib SubflowFwdPackets    -3.022352117568507
+    Attrib SubflowFwdBytes    0.4856398685132627
+    Attrib SubflowBwdPackets    0.67908385535646
+    Attrib SubflowBwdBytes    0.6487239756084756
+    Attrib Init_Win_bytes_forward    -0.24703585094292763
+    Attrib Init_Win_bytes_backward    1.9231809805186835
+    Attrib act_data_pkt_fwd    -1.9263364560688359
+    Attrib min_seg_size_forward    6.081325654124866
+    Attrib ActiveMean    0.7550922641915274
+    Attrib ActiveStd    0.4188014101359908
+    Attrib ActiveMax    0.5436081522878464
+    Attrib ActiveMin    0.754363452214799
+    Attrib IdleMean    -3.2398401958964906
+    Attrib IdleStd    0.9303312581381754
+    Attrib IdleMax    -3.0506559103017095
+    Attrib IdleMin    -3.672984319851156
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    0.0514478779236013
+    Attrib FlowDuration    -0.06576229129349237
+    Attrib TotalFwdPackets    -1.0116385194635673
+    Attrib TotalBackwardPackets    0.16723312105630614
+    Attrib TotalLengthofFwdPackets    0.08479150331603354
+    Attrib TotalLengthofBwdPackets    0.19562727146116182
+    Attrib FwdPacketLengthMax    0.5952982695560962
+    Attrib FwdPacketLengthMin    0.019890455123641067
+    Attrib FwdPacketLengthMean    0.968014854667077
+    Attrib FwdPacketLengthStd    1.0296424922075582
+    Attrib BwdPacketLengthMax    -0.10418853444144754
+    Attrib BwdPacketLengthMin    0.8779189558248308
+    Attrib BwdPacketLengthMean    0.4578722484052372
+    Attrib BwdPacketLengthStd    0.1923564817229019
+    Attrib FlowBytes/s    -0.04369887605407211
+    Attrib FlowPackets/s    0.007446535131677409
+    Attrib FlowIATMean    -0.8744074427245989
+    Attrib FlowIATStd    -3.4025600254970647
+    Attrib FlowIATMax    -2.1365227786305216
+    Attrib FlowIATMin    0.4198144701284596
+    Attrib FwdIATTotal    -0.18569026647077352
+    Attrib FwdIATMean    0.01570272411365387
+    Attrib FwdIATStd    -3.400064974712145
+    Attrib FwdIATMax    -2.1496969189970048
+    Attrib FwdIATMin    0.5869615256940327
+    Attrib BwdIATTotal    3.278279473483379
+    Attrib BwdIATMean    1.4451340118421658
+    Attrib BwdIATStd    0.2887464343347707
+    Attrib BwdIATMax    1.7516706225711316
+    Attrib BwdIATMin    1.3493855145092422
+    Attrib FwdPSHFlags    1.3351101644805325
+    Attrib BwdPSHFlags    0.04836807791017789
+    Attrib FwdURGFlags    0.031475762478584
+    Attrib BwdURGFlags    0.0301346009553176
+    Attrib FwdHeaderLength    1.3782700575285822
+    Attrib BwdHeaderLength    1.5014006107685165
+    Attrib FwdPackets/s    -2.07977476533606
+    Attrib BwdPackets/s    0.7535078507980599
+    Attrib MinPacketLength    -0.7386881854351712
+    Attrib MaxPacketLength    0.007938171514825877
+    Attrib PacketLengthMean    0.40012307977345984
+    Attrib PacketLengthStd    0.44016568457225036
+    Attrib PacketLengthVariance    -0.31515888165648515
+    Attrib FINFlagCount    -0.8588384806458209
+    Attrib SYNFlagCount    1.393612573301097
+    Attrib RSTFlagCount    -0.029478741501367155
+    Attrib PSHFlagCount    -3.427471644810638
+    Attrib ACKFlagCount    0.4924011126074801
+    Attrib URGFlagCount    1.1869941721482968
+    Attrib CWEFlagCount    0.03905944232278876
+    Attrib ECEFlagCount    0.02781086334667587
+    Attrib Down/UpRatio    1.0194594900497924
+    Attrib AveragePacketSize    0.4934901401648559
+    Attrib AvgFwdSegmentSize    0.9531857220790867
+    Attrib AvgBwdSegmentSize    0.38440975969147717
+    Attrib FwdAvgBytes/Bulk    0.0269653563860955
+    Attrib FwdAvgPackets/Bulk    0.018942080161815644
+    Attrib FwdAvgBulkRate    -0.0038689909016341867
+    Attrib BwdAvgBytes/Bulk    -0.008160586386507726
+    Attrib BwdAvgPackets/Bulk    -0.02373691633227877
+    Attrib BwdAvgBulkRate    0.01861605963876173
+    Attrib SubflowFwdPackets    -1.024335148717381
+    Attrib SubflowFwdBytes    0.1040562867505257
+    Attrib SubflowBwdPackets    0.14165325237753665
+    Attrib SubflowBwdBytes    0.18653954387496086
+    Attrib Init_Win_bytes_forward    0.5226076458051782
+    Attrib Init_Win_bytes_backward    1.3085591871741349
+    Attrib act_data_pkt_fwd    -0.7908576430214085
+    Attrib min_seg_size_forward    1.640456692285448
+    Attrib ActiveMean    0.2541368571151941
+    Attrib ActiveStd    0.050093849124885924
+    Attrib ActiveMax    0.07041469593243575
+    Attrib ActiveMin    0.3218169761317483
+    Attrib IdleMean    -1.749056688791233
+    Attrib IdleStd    0.2160824107486579
+    Attrib IdleMax    -1.6685566506531253
+    Attrib IdleMin    -1.9032266536866638
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    0.18111728635158064
+    Attrib FlowDuration    0.1542074893001482
+    Attrib TotalFwdPackets    0.697829879798963
+    Attrib TotalBackwardPackets    0.44534977479494253
+    Attrib TotalLengthofFwdPackets    0.1949058877151995
+    Attrib TotalLengthofBwdPackets    0.6322121177335516
+    Attrib FwdPacketLengthMax    0.9717243892389411
+    Attrib FwdPacketLengthMin    -0.10385779027128705
+    Attrib FwdPacketLengthMean    1.3687949516286217
+    Attrib FwdPacketLengthStd    1.516816400180012
+    Attrib BwdPacketLengthMax    -2.171548874447288
+    Attrib BwdPacketLengthMin    0.023326368929869147
+    Attrib BwdPacketLengthMean    0.06705315143635704
+    Attrib BwdPacketLengthStd    -1.7637942883180915
+    Attrib FlowBytes/s    -0.03808979008120103
+    Attrib FlowPackets/s    0.03154052351342161
+    Attrib FlowIATMean    -0.7287705731707439
+    Attrib FlowIATStd    -0.08442834665085305
+    Attrib FlowIATMax    -0.2882469301371297
+    Attrib FlowIATMin    -0.838086748939378
+    Attrib FwdIATTotal    0.057198131352500785
+    Attrib FwdIATMean    -0.3292505797427452
+    Attrib FwdIATStd    -0.14269169742781143
+    Attrib FwdIATMax    -0.36110793159143056
+    Attrib FwdIATMin    -0.37516781633497676
+    Attrib BwdIATTotal    0.362614550643628
+    Attrib BwdIATMean    0.09325745299236643
+    Attrib BwdIATStd    -0.1852366315582037
+    Attrib BwdIATMax    -0.05726254097347457
+    Attrib BwdIATMin    0.04748830425067954
+    Attrib FwdPSHFlags    0.342392066203248
+    Attrib BwdPSHFlags    -0.0135323435285871
+    Attrib FwdURGFlags    -0.19850178848925604
+    Attrib BwdURGFlags    7.190059482464761E-6
+    Attrib FwdHeaderLength    0.25859092583521254
+    Attrib BwdHeaderLength    0.3278104059341592
+    Attrib FwdPackets/s    -2.0432636341010464
+    Attrib BwdPackets/s    0.3125288722849749
+    Attrib MinPacketLength    -0.07669666673970861
+    Attrib MaxPacketLength    -1.9900909723571714
+    Attrib PacketLengthMean    -1.6847219585954203
+    Attrib PacketLengthStd    -2.1980271160222298
+    Attrib PacketLengthVariance    -1.5898925350265074
+    Attrib FINFlagCount    -1.0624401435765416
+    Attrib SYNFlagCount    0.33632219781207806
+    Attrib RSTFlagCount    -0.15134608258769658
+    Attrib PSHFlagCount    1.5134379848584005
+    Attrib ACKFlagCount    -0.19548387892193175
+    Attrib URGFlagCount    0.25263559852937734
+    Attrib CWEFlagCount    -0.1590665167947899
+    Attrib ECEFlagCount    -0.13968952711941615
+    Attrib Down/UpRatio    -2.23861920460126
+    Attrib AveragePacketSize    -2.1554540146088654
+    Attrib AvgFwdSegmentSize    1.3660733689666704
+    Attrib AvgBwdSegmentSize    0.11533051452813571
+    Attrib FwdAvgBytes/Bulk    -0.011165054889255156
+    Attrib FwdAvgPackets/Bulk    0.014843746618479911
+    Attrib FwdAvgBulkRate    0.0496636204743839
+    Attrib BwdAvgBytes/Bulk    0.011475024916746436
+    Attrib BwdAvgPackets/Bulk    0.030876628319082874
+    Attrib BwdAvgBulkRate    -0.004673975107381802
+    Attrib SubflowFwdPackets    0.7785049701559701
+    Attrib SubflowFwdBytes    0.18983357924577188
+    Attrib SubflowBwdPackets    0.48662867309408386
+    Attrib SubflowBwdBytes    0.6319405437406224
+    Attrib Init_Win_bytes_forward    1.9189058833506352
+    Attrib Init_Win_bytes_backward    0.21915340001269137
+    Attrib act_data_pkt_fwd    0.1286976071478958
+    Attrib min_seg_size_forward    -0.2924557176237514
+    Attrib ActiveMean    0.30269257110950354
+    Attrib ActiveStd    -0.06412324661234085
+    Attrib ActiveMax    -0.016286202258515098
+    Attrib ActiveMin    0.29729470525577995
+    Attrib IdleMean    -0.2824884715005472
+    Attrib IdleStd    -0.14325040914580286
+    Attrib IdleMax    -0.16808686462316902
+    Attrib IdleMin    -0.3023292389934022
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    0.11564452827459694
+    Attrib FlowDuration    0.24847628311711337
+    Attrib TotalFwdPackets    0.6340775503631465
+    Attrib TotalBackwardPackets    0.5317119180743153
+    Attrib TotalLengthofFwdPackets    0.32523148326089135
+    Attrib TotalLengthofBwdPackets    0.7274826660026035
+    Attrib FwdPacketLengthMax    1.203376665629522
+    Attrib FwdPacketLengthMin    1.8550262665267714E-4
+    Attrib FwdPacketLengthMean    1.6736166905756118
+    Attrib FwdPacketLengthStd    1.806521409703447
+    Attrib BwdPacketLengthMax    -2.265988099848286
+    Attrib BwdPacketLengthMin    0.16589599140821007
+    Attrib BwdPacketLengthMean    -0.2513505168246553
+    Attrib BwdPacketLengthStd    -1.828532531460114
+    Attrib FlowBytes/s    0.013363626954987107
+    Attrib FlowPackets/s    0.028974218829536588
+    Attrib FlowIATMean    -0.8837751915729375
+    Attrib FlowIATStd    -0.3322677956433219
+    Attrib FlowIATMax    -0.4227508184866814
+    Attrib FlowIATMin    -0.8753410527604183
+    Attrib FwdIATTotal    0.18232108741198194
+    Attrib FwdIATMean    -0.32333831715425837
+    Attrib FwdIATStd    -0.3520748400581914
+    Attrib FwdIATMax    -0.5455313763827767
+    Attrib FwdIATMin    -0.38678221575236593
+    Attrib BwdIATTotal    0.7988113798639594
+    Attrib BwdIATMean    0.292169943799372
+    Attrib BwdIATStd    -0.05186354901616706
+    Attrib BwdIATMax    0.17852147972896013
+    Attrib BwdIATMin    0.2770894144244486
+    Attrib FwdPSHFlags    0.7122140045803453
+    Attrib BwdPSHFlags    -0.010297539358147166
+    Attrib FwdURGFlags    -0.04685945446911402
+    Attrib BwdURGFlags    0.041203363757113365
+    Attrib FwdHeaderLength    0.4631605258482932
+    Attrib BwdHeaderLength    0.4604437269813384
+    Attrib FwdPackets/s    -6.9154155196547435
+    Attrib BwdPackets/s    1.2790099310594136
+    Attrib MinPacketLength    0.03120760801653991
+    Attrib MaxPacketLength    -2.0725846078906063
+    Attrib PacketLengthMean    -1.7866046746411672
+    Attrib PacketLengthStd    -2.1458068632888487
+    Attrib PacketLengthVariance    -1.444930364523732
+    Attrib FINFlagCount    -0.26426545906408055
+    Attrib SYNFlagCount    0.6609273206095057
+    Attrib RSTFlagCount    -0.11445554721338103
+    Attrib PSHFlagCount    2.2694165005814186
+    Attrib ACKFlagCount    -1.1952858698298177
+    Attrib URGFlagCount    0.4821108270543309
+    Attrib CWEFlagCount    -0.05446691918166496
+    Attrib ECEFlagCount    -0.08740700414864792
+    Attrib Down/UpRatio    -2.1475242572408284
+    Attrib AveragePacketSize    -2.232972206170638
+    Attrib AvgFwdSegmentSize    1.6708025975094993
+    Attrib AvgBwdSegmentSize    -0.1780846675631215
+    Attrib FwdAvgBytes/Bulk    -0.04588523115848221
+    Attrib FwdAvgPackets/Bulk    0.009002508736966765
+    Attrib FwdAvgBulkRate    -0.03882877092766869
+    Attrib BwdAvgBytes/Bulk    0.01150326893278266
+    Attrib BwdAvgPackets/Bulk    0.02710878826723813
+    Attrib BwdAvgBulkRate    -0.005454472519019461
+    Attrib SubflowFwdPackets    0.6892495604102827
+    Attrib SubflowFwdBytes    0.35625294841330407
+    Attrib SubflowBwdPackets    0.5798252992983659
+    Attrib SubflowBwdBytes    0.6805538490661982
+    Attrib Init_Win_bytes_forward    2.7353387128747904
+    Attrib Init_Win_bytes_backward    0.40834173313771965
+    Attrib act_data_pkt_fwd    0.036153611616395125
+    Attrib min_seg_size_forward    -0.782608827900145
+    Attrib ActiveMean    0.3379523977454284
+    Attrib ActiveStd    0.022299085586913774
+    Attrib ActiveMax    0.03775662513343581
+    Attrib ActiveMin    0.3990026804361281
+    Attrib IdleMean    -0.3032643417206693
+    Attrib IdleStd    -0.010670677145018098
+    Attrib IdleMax    -0.3063013141387245
+    Attrib IdleMin    -0.4136601575053421
+Sigmoid Node 16
+    Inputs    Weights
+    Threshold    1.2821392252118358
+    Attrib FlowDuration    1.146232965528871
+    Attrib TotalFwdPackets    -0.11124849989220266
+    Attrib TotalBackwardPackets    -0.5116318360628147
+    Attrib TotalLengthofFwdPackets    -0.7292821676756798
+    Attrib TotalLengthofBwdPackets    -0.920131213028615
+    Attrib FwdPacketLengthMax    0.6461820578445696
+    Attrib FwdPacketLengthMin    -1.2228214023942126
+    Attrib FwdPacketLengthMean    1.5157401824570609
+    Attrib FwdPacketLengthStd    1.9492305722475272
+    Attrib BwdPacketLengthMax    1.5433599802010727
+    Attrib BwdPacketLengthMin    -1.328322791397537
+    Attrib BwdPacketLengthMean    2.2119902616265508
+    Attrib BwdPacketLengthStd    3.2698408962883567
+    Attrib FlowBytes/s    0.020015828550141723
+    Attrib FlowPackets/s    -0.02236959782482465
+    Attrib FlowIATMean    -1.1183924608214373
+    Attrib FlowIATStd    -1.3934398588485404
+    Attrib FlowIATMax    0.18601431569260748
+    Attrib FlowIATMin    -1.037627071871796
+    Attrib FwdIATTotal    0.6129406844648716
+    Attrib FwdIATMean    -0.6230992470308041
+    Attrib FwdIATStd    -1.1110293675056253
+    Attrib FwdIATMax    -0.10275955145224348
+    Attrib FwdIATMin    -0.812691259261222
+    Attrib BwdIATTotal    1.7468296961556056
+    Attrib BwdIATMean    0.15328500221051766
+    Attrib BwdIATStd    -0.7038933812491642
+    Attrib BwdIATMax    0.6987103500205609
+    Attrib BwdIATMin    0.010175804278319517
+    Attrib FwdPSHFlags    -0.8459543298016711
+    Attrib BwdPSHFlags    0.01664933583433273
+    Attrib FwdURGFlags    -1.2752411504601266
+    Attrib BwdURGFlags    0.014057538032838601
+    Attrib FwdHeaderLength    0.2786818000352577
+    Attrib BwdHeaderLength    0.2913337943985694
+    Attrib FwdPackets/s    1.882089922290455
+    Attrib BwdPackets/s    -3.2735836228226263
+    Attrib MinPacketLength    -1.3984460337478164
+    Attrib MaxPacketLength    1.192654042575288
+    Attrib PacketLengthMean    2.993743857813911
+    Attrib PacketLengthStd    2.8029754134311586
+    Attrib PacketLengthVariance    -1.4621880369626725
+    Attrib FINFlagCount    -5.256443043373768
+    Attrib SYNFlagCount    -0.7555812086806667
+    Attrib RSTFlagCount    -1.2431540815181834
+    Attrib PSHFlagCount    1.7796687156065665
+    Attrib ACKFlagCount    -4.077659843527608
+    Attrib URGFlagCount    -0.36612409395045775
+    Attrib CWEFlagCount    -1.289487570513766
+    Attrib ECEFlagCount    -1.2945857795349953
+    Attrib Down/UpRatio    1.5571857831627849
+    Attrib AveragePacketSize    3.0069237880400985
+    Attrib AvgFwdSegmentSize    1.4686184166658187
+    Attrib AvgBwdSegmentSize    2.2437629020261225
+    Attrib FwdAvgBytes/Bulk    0.01189319754590338
+    Attrib FwdAvgPackets/Bulk    0.0175657356920582
+    Attrib FwdAvgBulkRate    0.003475607714993355
+    Attrib BwdAvgBytes/Bulk    -0.010261020506631267
+    Attrib BwdAvgPackets/Bulk    0.019960278194519232
+    Attrib BwdAvgBulkRate    -0.03931912312993291
+    Attrib SubflowFwdPackets    -0.15433334812879643
+    Attrib SubflowFwdBytes    -0.7079627434919468
+    Attrib SubflowBwdPackets    -0.5438671890303745
+    Attrib SubflowBwdBytes    -0.9119572576001256
+    Attrib Init_Win_bytes_forward    -3.1287921102947824
+    Attrib Init_Win_bytes_backward    3.4779922230373947
+    Attrib act_data_pkt_fwd    -1.004741484492443
+    Attrib min_seg_size_forward    -14.82255167795405
+    Attrib ActiveMean    -0.6264601506913653
+    Attrib ActiveStd    -1.1017664176171718
+    Attrib ActiveMax    -1.0020137425467157
+    Attrib ActiveMin    -0.702625225666027
+    Attrib IdleMean    -1.072752353168156
+    Attrib IdleStd    -1.8886875187799217
+    Attrib IdleMax    -1.5157341187219533
+    Attrib IdleMin    -0.8490252468891851
+Sigmoid Node 17
+    Inputs    Weights
+    Threshold    -2.0775801405280525
+    Attrib FlowDuration    -3.7796321825500483
+    Attrib TotalFwdPackets    -0.11374752767331867
+    Attrib TotalBackwardPackets    1.3416226336086805
+    Attrib TotalLengthofFwdPackets    1.8117337815399743
+    Attrib TotalLengthofBwdPackets    2.226162306679353
+    Attrib FwdPacketLengthMax    1.01160473073842
+    Attrib FwdPacketLengthMin    2.1399800433738014
+    Attrib FwdPacketLengthMean    0.667146377030115
+    Attrib FwdPacketLengthStd    0.2457306001888667
+    Attrib BwdPacketLengthMax    -2.83712869641925
+    Attrib BwdPacketLengthMin    3.1866229244579163
+    Attrib BwdPacketLengthMean    -1.8257615309265682
+    Attrib BwdPacketLengthStd    -3.5767496988430576
+    Attrib FlowBytes/s    5.471325677923397E-4
+    Attrib FlowPackets/s    -0.029394829005225456
+    Attrib FlowIATMean    -0.09082547939645126
+    Attrib FlowIATStd    -0.8992572971926882
+    Attrib FlowIATMax    -2.5827383266418513
+    Attrib FlowIATMin    1.3522266174748412
+    Attrib FwdIATTotal    -3.2261150691546168
+    Attrib FwdIATMean    0.482426097311629
+    Attrib FwdIATStd    -1.4153171943900196
+    Attrib FwdIATMax    -2.2990866931701053
+    Attrib FwdIATMin    1.7397576825271286
+    Attrib BwdIATTotal    0.09933522443899939
+    Attrib BwdIATMean    0.6026151860875023
+    Attrib BwdIATStd    1.642572680617388
+    Attrib BwdIATMax    0.17184892022257567
+    Attrib BwdIATMin    0.7168171332410742
+    Attrib FwdPSHFlags    1.3994896740005232
+    Attrib BwdPSHFlags    -0.0013147065983479672
+    Attrib FwdURGFlags    2.1156123528832644
+    Attrib BwdURGFlags    0.008053639440670578
+    Attrib FwdHeaderLength    0.536611732158319
+    Attrib BwdHeaderLength    0.6452194499315822
+    Attrib FwdPackets/s    2.5595302058496623
+    Attrib BwdPackets/s    5.485554716832767
+    Attrib MinPacketLength    2.1607734326198034
+    Attrib MaxPacketLength    -2.333422213829184
+    Attrib PacketLengthMean    -3.652438965915548
+    Attrib PacketLengthStd    -3.7449211199512167
+    Attrib PacketLengthVariance    1.1004855043737947
+    Attrib FINFlagCount    1.6666858263588715
+    Attrib SYNFlagCount    1.4347522927516467
+    Attrib RSTFlagCount    2.0814870942278336
+    Attrib PSHFlagCount    1.9783744759213568
+    Attrib ACKFlagCount    -0.6736380958133541
+    Attrib URGFlagCount    2.2846080069544876
+    Attrib CWEFlagCount    2.131474789999917
+    Attrib ECEFlagCount    2.0782785829326174
+    Attrib Down/UpRatio    -1.7158788758267356
+    Attrib AveragePacketSize    -3.966026714405156
+    Attrib AvgFwdSegmentSize    0.6886822875891948
+    Attrib AvgBwdSegmentSize    -1.7963476494592003
+    Attrib FwdAvgBytes/Bulk    -0.044658751343285286
+    Attrib FwdAvgPackets/Bulk    0.014501105576094936
+    Attrib FwdAvgBulkRate    0.044993145163588696
+    Attrib BwdAvgBytes/Bulk    -0.03630578670900334
+    Attrib BwdAvgPackets/Bulk    -0.04774786448466215
+    Attrib BwdAvgBulkRate    0.006578193614082739
+    Attrib SubflowFwdPackets    -0.0372845312534651
+    Attrib SubflowFwdBytes    1.844834112688538
+    Attrib SubflowBwdPackets    1.3151665001562096
+    Attrib SubflowBwdBytes    2.2948662755366933
+    Attrib Init_Win_bytes_forward    5.900419637588998
+    Attrib Init_Win_bytes_backward    -3.4645267978580816
+    Attrib act_data_pkt_fwd    1.252419253521489
+    Attrib min_seg_size_forward    16.09719057831464
+    Attrib ActiveMean    0.9103093167361331
+    Attrib ActiveStd    2.003943833125437
+    Attrib ActiveMax    1.7231635179339417
+    Attrib ActiveMin    0.8879659496522216
+    Attrib IdleMean    0.10005564391801365
+    Attrib IdleStd    2.1235546407274684
+    Attrib IdleMax    0.11908140977534643
+    Attrib IdleMin    0.06301274357676376
+Sigmoid Node 18
+    Inputs    Weights
+    Threshold    1.8600203382088807
+    Attrib FlowDuration    4.434649586126485
+    Attrib TotalFwdPackets    -0.02496208376858741
+    Attrib TotalBackwardPackets    -0.8790570631482656
+    Attrib TotalLengthofFwdPackets    -1.1363560341504342
+    Attrib TotalLengthofBwdPackets    -1.0716777454315474
+    Attrib FwdPacketLengthMax    0.622568567121819
+    Attrib FwdPacketLengthMin    -1.81643101480131
+    Attrib FwdPacketLengthMean    1.4108393025208568
+    Attrib FwdPacketLengthStd    1.9404504555384157
+    Attrib BwdPacketLengthMax    0.14973662236321864
+    Attrib BwdPacketLengthMin    -2.48889008015715
+    Attrib BwdPacketLengthMean    1.3811925642678278
+    Attrib BwdPacketLengthStd    2.3782693847975374
+    Attrib FlowBytes/s    0.010670023861049857
+    Attrib FlowPackets/s    -0.040819806672705274
+    Attrib FlowIATMean    -0.352296546113763
+    Attrib FlowIATStd    -0.7330713603476412
+    Attrib FlowIATMax    1.2119975574509025
+    Attrib FlowIATMin    -1.277618523799172
+    Attrib FwdIATTotal    3.716893053173277
+    Attrib FwdIATMean    -0.23551829073221114
+    Attrib FwdIATStd    -0.6502543847182276
+    Attrib FwdIATMax    0.8615989112228951
+    Attrib FwdIATMin    -1.1268999276015375
+    Attrib BwdIATTotal    2.730998260159445
+    Attrib BwdIATMean    0.8088933929943037
+    Attrib BwdIATStd    -1.6642915702232783
+    Attrib BwdIATMax    0.964409688812453
+    Attrib BwdIATMin    0.7085696671185445
+    Attrib FwdPSHFlags    -0.454872248470801
+    Attrib BwdPSHFlags    -0.01383413945124179
+    Attrib FwdURGFlags    -1.900162900926916
+    Attrib BwdURGFlags    -0.02495481474467929
+    Attrib FwdHeaderLength    1.864133322421369
+    Attrib BwdHeaderLength    1.8976111814059315
+    Attrib FwdPackets/s    1.4568954588217582
+    Attrib BwdPackets/s    -5.194078188164557
+    Attrib MinPacketLength    -3.059391094805282
+    Attrib MaxPacketLength    -0.45684652944237447
+    Attrib PacketLengthMean    1.127568080129428
+    Attrib PacketLengthStd    0.8651481718071653
+    Attrib PacketLengthVariance    -3.273208384904397
+    Attrib FINFlagCount    -4.453075159802743
+    Attrib SYNFlagCount    -0.4658853970689575
+    Attrib RSTFlagCount    -1.2625987523353932
+    Attrib PSHFlagCount    0.5498173938346909
+    Attrib ACKFlagCount    -3.5548628251128287
+    Attrib URGFlagCount    -0.7675594212547013
+    Attrib CWEFlagCount    -1.8598863795067047
+    Attrib ECEFlagCount    -1.2957284231935313
+    Attrib Down/UpRatio    -0.17308367632764116
+    Attrib AveragePacketSize    0.770324125841053
+    Attrib AvgFwdSegmentSize    1.4407443954802812
+    Attrib AvgBwdSegmentSize    1.3391711882496151
+    Attrib FwdAvgBytes/Bulk    0.02708011293887451
+    Attrib FwdAvgPackets/Bulk    0.020717454972028357
+    Attrib FwdAvgBulkRate    0.01790017949728609
+    Attrib BwdAvgBytes/Bulk    0.03314492856865317
+    Attrib BwdAvgPackets/Bulk    -0.006139946811703843
+    Attrib BwdAvgBulkRate    0.006558405039412948
+    Attrib SubflowFwdPackets    -0.05433562018929768
+    Attrib SubflowFwdBytes    -1.0963635641832779
+    Attrib SubflowBwdPackets    -0.9119783580054382
+    Attrib SubflowBwdBytes    -1.0483145385886457
+    Attrib Init_Win_bytes_forward    0.5254298295034503
+    Attrib Init_Win_bytes_backward    2.9621921559526787
+    Attrib act_data_pkt_fwd    -1.2127827002001998
+    Attrib min_seg_size_forward    -13.918132850613762
+    Attrib ActiveMean    1.5014723378705566
+    Attrib ActiveStd    -1.4883304340019097
+    Attrib ActiveMax    -0.8546196697838983
+    Attrib ActiveMin    1.3575173457520422
+    Attrib IdleMean    -0.9654221621456579
+    Attrib IdleStd    -1.6620436654951305
+    Attrib IdleMax    -0.8071941114495887
+    Attrib IdleMin    -1.066132407777136
+Sigmoid Node 19
+    Inputs    Weights
+    Threshold    0.8005397606429033
+    Attrib FlowDuration    1.7419763822118832
+    Attrib TotalFwdPackets    -1.1718473259678412
+    Attrib TotalBackwardPackets    -0.4928361543542947
+    Attrib TotalLengthofFwdPackets    -0.4895381891624893
+    Attrib TotalLengthofBwdPackets    -0.5265551117919219
+    Attrib FwdPacketLengthMax    0.37950984955127026
+    Attrib FwdPacketLengthMin    -0.6983025070785419
+    Attrib FwdPacketLengthMean    0.8922019563723163
+    Attrib FwdPacketLengthStd    1.1681693906102866
+    Attrib BwdPacketLengthMax    0.5659096065783356
+    Attrib BwdPacketLengthMin    -0.1782877084258072
+    Attrib BwdPacketLengthMean    2.227125596030321
+    Attrib BwdPacketLengthStd    1.9869544732283104
+    Attrib FlowBytes/s    -0.04414175317962942
+    Attrib FlowPackets/s    -0.025816497720617327
+    Attrib FlowIATMean    -1.1609155936654392
+    Attrib FlowIATStd    -2.4630559639967466
+    Attrib FlowIATMax    -0.3488954621213665
+    Attrib FlowIATMin    -0.5753707577336309
+    Attrib FwdIATTotal    1.4490996370656044
+    Attrib FwdIATMean    -0.3201982691013559
+    Attrib FwdIATStd    -2.233621443263994
+    Attrib FwdIATMax    -0.5046365769911243
+    Attrib FwdIATMin    -0.24637767366711213
+    Attrib BwdIATTotal    2.8978281323870023
+    Attrib BwdIATMean    0.6895136585528843
+    Attrib BwdIATStd    -0.21673420172180963
+    Attrib BwdIATMax    1.3245627960670439
+    Attrib BwdIATMin    0.4480101455924507
+    Attrib FwdPSHFlags    0.690823647385535
+    Attrib BwdPSHFlags    -0.03916320973025453
+    Attrib FwdURGFlags    -0.7345305129962171
+    Attrib BwdURGFlags    0.013770243295021273
+    Attrib FwdHeaderLength    1.7034701495052436
+    Attrib BwdHeaderLength    1.8055861354074458
+    Attrib FwdPackets/s    -0.42190688232255613
+    Attrib BwdPackets/s    -0.8077930867844764
+    Attrib MinPacketLength    -1.2605092156586013
+    Attrib MaxPacketLength    0.2836719841788074
+    Attrib PacketLengthMean    1.780844540259595
+    Attrib PacketLengthStd    1.6563348651002736
+    Attrib PacketLengthVariance    -1.0062107766159354
+    Attrib FINFlagCount    -3.36547182943271
+    Attrib SYNFlagCount    0.7101753077227492
+    Attrib RSTFlagCount    -0.7315833580554514
+    Attrib PSHFlagCount    -0.70443822876291
+    Attrib ACKFlagCount    -3.24064464381258
+    Attrib URGFlagCount    1.0114116563152817
+    Attrib CWEFlagCount    -0.7412474954339726
+    Attrib ECEFlagCount    -0.7740773963461935
+    Attrib Down/UpRatio    0.497414930013561
+    Attrib AveragePacketSize    1.8527341405799609
+    Attrib AvgFwdSegmentSize    0.8688520823154471
+    Attrib AvgBwdSegmentSize    2.1855966041786985
+    Attrib FwdAvgBytes/Bulk    -0.008883895242305387
+    Attrib FwdAvgPackets/Bulk    -0.0278903000888998
+    Attrib FwdAvgBulkRate    -0.04791968090719752
+    Attrib BwdAvgBytes/Bulk    0.024681999617072653
+    Attrib BwdAvgPackets/Bulk    -0.04460160382733757
+    Attrib BwdAvgBulkRate    -0.042594834609338585
+    Attrib SubflowFwdPackets    -1.202681778921865
+    Attrib SubflowFwdBytes    -0.4903495886540118
+    Attrib SubflowBwdPackets    -0.5031171779072827
+    Attrib SubflowBwdBytes    -0.5196260988209093
+    Attrib Init_Win_bytes_forward    -3.0389934341722857
+    Attrib Init_Win_bytes_backward    2.019238845054193
+    Attrib act_data_pkt_fwd    -1.235027553786218
+    Attrib min_seg_size_forward    -5.2927578665685235
+    Attrib ActiveMean    0.22727154829585225
+    Attrib ActiveStd    -0.6873294087779871
+    Attrib ActiveMax    -0.4696732451986299
+    Attrib ActiveMin    0.14836817937042382
+    Attrib IdleMean    -0.6036723989996607
+    Attrib IdleStd    -0.6114744812557846
+    Attrib IdleMax    -0.5636644936671982
+    Attrib IdleMin    -0.7172154138508999
+Sigmoid Node 20
+    Inputs    Weights
+    Threshold    0.45882476815240636
+    Attrib FlowDuration    2.7524589842227334
+    Attrib TotalFwdPackets    -0.8243191839385242
+    Attrib TotalBackwardPackets    0.08372398842679153
+    Attrib TotalLengthofFwdPackets    -0.07223110394046596
+    Attrib TotalLengthofBwdPackets    0.27676005232104844
+    Attrib FwdPacketLengthMax    0.6860503335546043
+    Attrib FwdPacketLengthMin    -0.46732090046192026
+    Attrib FwdPacketLengthMean    1.0840740859636961
+    Attrib FwdPacketLengthStd    1.2473932131139636
+    Attrib BwdPacketLengthMax    -2.110642608736363
+    Attrib BwdPacketLengthMin    -0.11375663811287016
+    Attrib BwdPacketLengthMean    0.1892286721262324
+    Attrib BwdPacketLengthStd    -1.2668004555924024
+    Attrib FlowBytes/s    0.009325710649716101
+    Attrib FlowPackets/s    -0.04810658541153943
+    Attrib FlowIATMean    -0.983013378239347
+    Attrib FlowIATStd    -1.8655189509894796
+    Attrib FlowIATMax    -0.6980697976956475
+    Attrib FlowIATMin    -0.7365420198367398
+    Attrib FwdIATTotal    2.6263789215978113
+    Attrib FwdIATMean    0.0865438369459942
+    Attrib FwdIATStd    -1.529046128594546
+    Attrib FwdIATMax    -0.7930873481351167
+    Attrib FwdIATMin    -0.33101586285159557
+    Attrib BwdIATTotal    3.983929779740863
+    Attrib BwdIATMean    1.4100475223229794
+    Attrib BwdIATStd    -0.49918033131751866
+    Attrib BwdIATMax    1.3958945128433833
+    Attrib BwdIATMin    1.3502965608695023
+    Attrib FwdPSHFlags    0.2522579769722069
+    Attrib BwdPSHFlags    0.03434229361819878
+    Attrib FwdURGFlags    -0.49178895355699226
+    Attrib BwdURGFlags    0.03874592888749229
+    Attrib FwdHeaderLength    0.4413086869527664
+    Attrib BwdHeaderLength    0.6324754604870877
+    Attrib FwdPackets/s    -1.4069872543213933
+    Attrib BwdPackets/s    0.2106721785408048
+    Attrib MinPacketLength    -0.8542256798182498
+    Attrib MaxPacketLength    -1.9998791029844132
+    Attrib PacketLengthMean    -1.5192201298981955
+    Attrib PacketLengthStd    -1.6445410387912978
+    Attrib PacketLengthVariance    -1.6364541009358753
+    Attrib FINFlagCount    2.2479831057441735
+    Attrib SYNFlagCount    0.3364270622458177
+    Attrib RSTFlagCount    -0.46355809865028846
+    Attrib PSHFlagCount    2.6464192100761172
+    Attrib ACKFlagCount    -4.044116918785002
+    Attrib URGFlagCount    0.7598369818425359
+    Attrib CWEFlagCount    -0.4908762963484492
+    Attrib ECEFlagCount    -0.515077612766601
+    Attrib Down/UpRatio    -1.8334224770922543
+    Attrib AveragePacketSize    -1.8421645568996765
+    Attrib AvgFwdSegmentSize    1.088082024171768
+    Attrib AvgBwdSegmentSize    0.22510410462572025
+    Attrib FwdAvgBytes/Bulk    -0.006430538292667633
+    Attrib FwdAvgPackets/Bulk    0.036650538875343516
+    Attrib FwdAvgBulkRate    0.014055961679799181
+    Attrib BwdAvgBytes/Bulk    -0.04975775232930434
+    Attrib BwdAvgPackets/Bulk    0.015707754260654225
+    Attrib BwdAvgBulkRate    -0.03099643988031482
+    Attrib SubflowFwdPackets    -0.7817432440503933
+    Attrib SubflowFwdBytes    -0.15498044304543676
+    Attrib SubflowBwdPackets    0.08437536106530515
+    Attrib SubflowBwdBytes    0.24505288537086542
+    Attrib Init_Win_bytes_forward    3.2824667052820735
+    Attrib Init_Win_bytes_backward    0.3228925930053608
+    Attrib act_data_pkt_fwd    -0.9282373603318637
+    Attrib min_seg_size_forward    3.175536180111074
+    Attrib ActiveMean    0.07101327299765436
+    Attrib ActiveStd    -0.4500422535398554
+    Attrib ActiveMax    -0.30879996409072114
+    Attrib ActiveMin    0.06428409038989398
+    Attrib IdleMean    -0.027500085714323594
+    Attrib IdleStd    -0.09176978010002869
+    Attrib IdleMax    0.12013663350943588
+    Attrib IdleMin    -0.393835122701962
+Sigmoid Node 21
+    Inputs    Weights
+    Threshold    0.1348027275054693
+    Attrib FlowDuration    0.02410515473076347
+    Attrib TotalFwdPackets    -1.0095363736956169
+    Attrib TotalBackwardPackets    0.07841596355886922
+    Attrib TotalLengthofFwdPackets    0.07289882450844462
+    Attrib TotalLengthofBwdPackets    0.14384756553735173
+    Attrib FwdPacketLengthMax    0.6497888022696198
+    Attrib FwdPacketLengthMin    -0.14834169581345197
+    Attrib FwdPacketLengthMean    1.078214434890223
+    Attrib FwdPacketLengthStd    1.2004948366699453
+    Attrib BwdPacketLengthMax    -0.1301104484619723
+    Attrib BwdPacketLengthMin    0.653825050949707
+    Attrib BwdPacketLengthMean    0.5315575377874383
+    Attrib BwdPacketLengthStd    0.28309827874745125
+    Attrib FlowBytes/s    0.04140671866636557
+    Attrib FlowPackets/s    -0.04470172020360156
+    Attrib FlowIATMean    -1.0950017316056857
+    Attrib FlowIATStd    -3.3282983213517325
+    Attrib FlowIATMax    -2.0446120686680627
+    Attrib FlowIATMin    0.11392884270982626
+    Attrib FwdIATTotal    -0.10972895314285794
+    Attrib FwdIATMean    -0.11525050272615849
+    Attrib FwdIATStd    -3.2620006255883376
+    Attrib FwdIATMax    -2.07964682564153
+    Attrib FwdIATMin    0.35897079631082374
+    Attrib BwdIATTotal    3.0862695289124735
+    Attrib BwdIATMean    1.1853191841358968
+    Attrib BwdIATStd    0.22515668250486484
+    Attrib BwdIATMax    1.5456115132351282
+    Attrib BwdIATMin    1.1386120681125547
+    Attrib FwdPSHFlags    1.1547042352370291
+    Attrib BwdPSHFlags    -0.04316461436268777
+    Attrib FwdURGFlags    -0.0656037521475831
+    Attrib BwdURGFlags    -0.032116557857501705
+    Attrib FwdHeaderLength    1.6993460668260003
+    Attrib BwdHeaderLength    1.8486739445203795
+    Attrib FwdPackets/s    -1.6897785314202651
+    Attrib BwdPackets/s    0.504115257457939
+    Attrib MinPacketLength    -0.9439842543281298
+    Attrib MaxPacketLength    0.05106163352339775
+    Attrib PacketLengthMean    0.5597856259199251
+    Attrib PacketLengthStd    0.5498750528226841
+    Attrib PacketLengthVariance    -0.3494120898818938
+    Attrib FINFlagCount    -0.22943780435017075
+    Attrib SYNFlagCount    1.197063819302287
+    Attrib RSTFlagCount    -0.046651764982842486
+    Attrib PSHFlagCount    -2.670225988054934
+    Attrib ACKFlagCount    1.4032880940537698
+    Attrib URGFlagCount    1.6467542759334821
+    Attrib CWEFlagCount    -0.06690109684920961
+    Attrib ECEFlagCount    -0.0709586508960834
+    Attrib Down/UpRatio    1.061404225144181
+    Attrib AveragePacketSize    0.6137101879038911
+    Attrib AvgFwdSegmentSize    1.0605811656209552
+    Attrib AvgBwdSegmentSize    0.5192735174447277
+    Attrib FwdAvgBytes/Bulk    0.03442338788780765
+    Attrib FwdAvgPackets/Bulk    0.033667515253630056
+    Attrib FwdAvgBulkRate    -0.011398063962218506
+    Attrib BwdAvgBytes/Bulk    -6.469262963110581E-4
+    Attrib BwdAvgPackets/Bulk    -0.020146244704003537
+    Attrib BwdAvgBulkRate    0.035595060197281134
+    Attrib SubflowFwdPackets    -1.0206986103295181
+    Attrib SubflowFwdBytes    0.10478273596411858
+    Attrib SubflowBwdPackets    0.1443315940544848
+    Attrib SubflowBwdBytes    0.07908467280975567
+    Attrib Init_Win_bytes_forward    0.6589465501431923
+    Attrib Init_Win_bytes_backward    1.2745491871377186
+    Attrib act_data_pkt_fwd    -0.8653321969802451
+    Attrib min_seg_size_forward    1.0708936769246473
+    Attrib ActiveMean    0.18567956048621484
+    Attrib ActiveStd    -0.0037496410373445235
+    Attrib ActiveMax    -0.009768364599541614
+    Attrib ActiveMin    0.21024091169331638
+    Attrib IdleMean    -1.6200544300409374
+    Attrib IdleStd    0.08217198257208341
+    Attrib IdleMax    -1.6544756882771459
+    Attrib IdleMin    -1.7789913263538129
+Class BENIGN
+    Input
+    Node 0
+Class abnormal
+    Input
+    Node 1
+
+
+Time taken to build model: 126.48 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.09 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        2025               98.7805 %
+Incorrectly Classified Instances        25                1.2195 %
+Kappa statistic                          0.6612
+Mean absolute error                      0.0142
+Root mean squared error                  0.103 
+Relative absolute error                 29.8604 %
+Root relative squared error             66.7423 %
+Total Number of Instances             2050     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.500    0.988      1.000    0.994      0.703    0.951     0.998     BENIGN
+                 0.500    0.000    1.000      0.500    0.667      0.703    0.951     0.709     abnormal
+Weighted Avg.    0.988    0.488    0.988      0.988    0.986      0.703    0.951     0.991     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 2000    0 |    a = BENIGN
+   25   25 |    b = abnormal
+
