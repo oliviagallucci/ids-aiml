@@ -1,0 +1,330 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     misuseTrainingData
+Instances:    10000
+Attributes:   77
+              FlowDuration
+              TotalFwdPackets
+              TotalBackwardPackets
+              TotalLengthofFwdPackets
+              TotalLengthofBwdPackets
+              FwdPacketLengthMax
+              FwdPacketLengthMin
+              FwdPacketLengthMean
+              FwdPacketLengthStd
+              BwdPacketLengthMax
+              BwdPacketLengthMin
+              BwdPacketLengthMean
+              BwdPacketLengthStd
+              FlowBytes/s
+              FlowPackets/s
+              FlowIATMean
+              FlowIATStd
+              FlowIATMax
+              FlowIATMin
+              FwdIATTotal
+              FwdIATMean
+              FwdIATStd
+              FwdIATMax
+              FwdIATMin
+              BwdIATTotal
+              BwdIATMean
+              BwdIATStd
+              BwdIATMax
+              BwdIATMin
+              FwdPSHFlags
+              BwdPSHFlags
+              FwdURGFlags
+              BwdURGFlags
+              FwdHeaderLength
+              BwdHeaderLength
+              FwdPackets/s
+              BwdPackets/s
+              MinPacketLength
+              MaxPacketLength
+              PacketLengthMean
+              PacketLengthStd
+              PacketLengthVariance
+              FINFlagCount
+              SYNFlagCount
+              RSTFlagCount
+              PSHFlagCount
+              ACKFlagCount
+              URGFlagCount
+              CWEFlagCount
+              ECEFlagCount
+              Down/UpRatio
+              AveragePacketSize
+              AvgFwdSegmentSize
+              AvgBwdSegmentSize
+              FwdAvgBytes/Bulk
+              FwdAvgPackets/Bulk
+              FwdAvgBulkRate
+              BwdAvgBytes/Bulk
+              BwdAvgPackets/Bulk
+              BwdAvgBulkRate
+              SubflowFwdPackets
+              SubflowFwdBytes
+              SubflowBwdPackets
+              SubflowBwdBytes
+              Init_Win_bytes_forward
+              Init_Win_bytes_backward
+              act_data_pkt_fwd
+              min_seg_size_forward
+              ActiveMean
+              ActiveStd
+              ActiveMax
+              ActiveMin
+              IdleMean
+              IdleStd
+              IdleMax
+              IdleMin
+              Label
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+PacketLengthVariance <= 0.100866
+|   FwdIATMin <= 0.003429
+|   |   act_data_pkt_fwd <= 0.001533
+|   |   |   BwdIATMean <= 0.208333
+|   |   |   |   TotalBackwardPackets <= 0.000247
+|   |   |   |   |   FwdPSHFlags <= 0
+|   |   |   |   |   |   AveragePacketSize <= 0.000459
+|   |   |   |   |   |   |   min_seg_size_forward <= 0.540984
+|   |   |   |   |   |   |   |   Init_Win_bytes_backward <= 0.000076
+|   |   |   |   |   |   |   |   |   URGFlagCount <= 0
+|   |   |   |   |   |   |   |   |   |   Init_Win_bytes_forward <= 0.004288
+|   |   |   |   |   |   |   |   |   |   |   Init_Win_bytes_forward <= 0.003784: BENIGN (24.0)
+|   |   |   |   |   |   |   |   |   |   |   Init_Win_bytes_forward > 0.003784
+|   |   |   |   |   |   |   |   |   |   |   |   Init_Win_bytes_forward <= 0.00386: DoSHulk (30.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Init_Win_bytes_forward > 0.00386
+|   |   |   |   |   |   |   |   |   |   |   |   |   Init_Win_bytes_forward <= 0.00412: BENIGN (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Init_Win_bytes_forward > 0.00412: DoSHulk (25.0)
+|   |   |   |   |   |   |   |   |   |   Init_Win_bytes_forward > 0.004288: BENIGN (59.0/1.0)
+|   |   |   |   |   |   |   |   |   URGFlagCount > 0
+|   |   |   |   |   |   |   |   |   |   Init_Win_bytes_forward <= 0.003494: DoSGoldenEye (5.0)
+|   |   |   |   |   |   |   |   |   |   Init_Win_bytes_forward > 0.003494: BENIGN (2.0/1.0)
+|   |   |   |   |   |   |   |   Init_Win_bytes_backward > 0.000076
+|   |   |   |   |   |   |   |   |   min_seg_size_forward <= 0.533333
+|   |   |   |   |   |   |   |   |   |   TotalBackwardPackets <= 0.000015
+|   |   |   |   |   |   |   |   |   |   |   PSHFlagCount <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   FwdPackets/s <= 0.003565: BENIGN (19.0)
+|   |   |   |   |   |   |   |   |   |   |   |   FwdPackets/s > 0.003565
+|   |   |   |   |   |   |   |   |   |   |   |   |   Init_Win_bytes_forward <= 0.018387
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Init_Win_bytes_backward <= 0.003738
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Init_Win_bytes_backward <= 0.00354: BENIGN (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Init_Win_bytes_backward > 0.00354: WebAttack (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Init_Win_bytes_backward > 0.003738: BENIGN (20.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Init_Win_bytes_forward > 0.018387: WebAttack (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   PSHFlagCount > 0: WebAttack (171.0/3.0)
+|   |   |   |   |   |   |   |   |   |   TotalBackwardPackets > 0.000015: BENIGN (47.0)
+|   |   |   |   |   |   |   |   |   min_seg_size_forward > 0.533333: BENIGN (104.0/1.0)
+|   |   |   |   |   |   |   min_seg_size_forward > 0.540984
+|   |   |   |   |   |   |   |   Down/UpRatio <= 0.023256: BENIGN (403.0/2.0)
+|   |   |   |   |   |   |   |   Down/UpRatio > 0.023256
+|   |   |   |   |   |   |   |   |   Init_Win_bytes_backward <= 0.003799
+|   |   |   |   |   |   |   |   |   |   Init_Win_bytes_backward <= 0.003769: BENIGN (76.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Init_Win_bytes_backward > 0.003769: SSH-Patator (85.0)
+|   |   |   |   |   |   |   |   |   Init_Win_bytes_backward > 0.003799
+|   |   |   |   |   |   |   |   |   |   Init_Win_bytes_backward <= 0.003937
+|   |   |   |   |   |   |   |   |   |   |   Init_Win_bytes_backward <= 0.003922: BENIGN (42.0)
+|   |   |   |   |   |   |   |   |   |   |   Init_Win_bytes_backward > 0.003922: SSH-Patator (4.0)
+|   |   |   |   |   |   |   |   |   |   Init_Win_bytes_backward > 0.003937: BENIGN (123.0)
+|   |   |   |   |   |   AveragePacketSize > 0.000459
+|   |   |   |   |   |   |   AveragePacketSize <= 0.144778
+|   |   |   |   |   |   |   |   Init_Win_bytes_backward <= 0.00354: BENIGN (4313.0/1.0)
+|   |   |   |   |   |   |   |   Init_Win_bytes_backward > 0.00354
+|   |   |   |   |   |   |   |   |   Down/UpRatio <= 0.1
+|   |   |   |   |   |   |   |   |   |   Init_Win_bytes_backward <= 0.003647
+|   |   |   |   |   |   |   |   |   |   |   MaxPacketLength <= 0.008622
+|   |   |   |   |   |   |   |   |   |   |   |   TotalLengthofFwdPackets <= 0.000093: DoSHulk (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   TotalLengthofFwdPackets > 0.000093: Bot (56.0)
+|   |   |   |   |   |   |   |   |   |   |   MaxPacketLength > 0.008622
+|   |   |   |   |   |   |   |   |   |   |   |   BwdPacketLengthMax <= 0.025499: DoSslowloris (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BwdPacketLengthMax > 0.025499
+|   |   |   |   |   |   |   |   |   |   |   |   |   Down/UpRatio <= 0.057143: BENIGN (24.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Down/UpRatio > 0.057143
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   FwdHeaderLength <= 0.000025: BENIGN (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   FwdHeaderLength > 0.000025: WebAttack (6.0)
+|   |   |   |   |   |   |   |   |   |   Init_Win_bytes_backward > 0.003647
+|   |   |   |   |   |   |   |   |   |   |   FwdPacketLengthMean <= 0.043204: BENIGN (735.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   FwdPacketLengthMean > 0.043204
+|   |   |   |   |   |   |   |   |   |   |   |   FwdPacketLengthMax <= 0.019339: DoSSlowhttptest (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   FwdPacketLengthMax > 0.019339
+|   |   |   |   |   |   |   |   |   |   |   |   |   Init_Win_bytes_backward <= 0.003769: Bot (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Init_Win_bytes_backward > 0.003769: BENIGN (41.0)
+|   |   |   |   |   |   |   |   |   Down/UpRatio > 0.1
+|   |   |   |   |   |   |   |   |   |   Init_Win_bytes_forward <= 0.07222
+|   |   |   |   |   |   |   |   |   |   |   Down/UpRatio <= 0.142857
+|   |   |   |   |   |   |   |   |   |   |   |   Init_Win_bytes_forward <= 0.00296: BENIGN (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Init_Win_bytes_forward > 0.00296
+|   |   |   |   |   |   |   |   |   |   |   |   |   Init_Win_bytes_forward <= 0.003784: Bot (77.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Init_Win_bytes_forward > 0.003784
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Init_Win_bytes_backward <= 0.003693: Bot (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Init_Win_bytes_backward > 0.003693
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Init_Win_bytes_forward <= 0.015991
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FwdPackets/s <= 0.005747: Bot (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FwdPackets/s > 0.005747: BENIGN (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Init_Win_bytes_forward > 0.015991: Bot (4.0)
+|   |   |   |   |   |   |   |   |   |   |   Down/UpRatio > 0.142857: BENIGN (7.0)
+|   |   |   |   |   |   |   |   |   |   Init_Win_bytes_forward > 0.07222: BENIGN (15.0)
+|   |   |   |   |   |   |   AveragePacketSize > 0.144778
+|   |   |   |   |   |   |   |   URGFlagCount <= 0
+|   |   |   |   |   |   |   |   |   PacketLengthMean <= 0.184572
+|   |   |   |   |   |   |   |   |   |   BwdIATMean <= 0.00758: BENIGN (32.0)
+|   |   |   |   |   |   |   |   |   |   BwdIATMean > 0.00758
+|   |   |   |   |   |   |   |   |   |   |   TotalBackwardPackets <= 0.00004: DoSGoldenEye (43.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   TotalBackwardPackets > 0.00004: BENIGN (8.0)
+|   |   |   |   |   |   |   |   |   PacketLengthMean > 0.184572
+|   |   |   |   |   |   |   |   |   |   BwdPackets/s <= 0.009434
+|   |   |   |   |   |   |   |   |   |   |   IdleMax <= 0.589167
+|   |   |   |   |   |   |   |   |   |   |   |   PacketLengthVariance <= 0.071396: BENIGN (150.0)
+|   |   |   |   |   |   |   |   |   |   |   |   PacketLengthVariance > 0.071396
+|   |   |   |   |   |   |   |   |   |   |   |   |   act_data_pkt_fwd <= 0.000042
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   FlowDuration <= 0.068084: WebAttack (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   FlowDuration > 0.068084: DoSGoldenEye (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   act_data_pkt_fwd > 0.000042: BENIGN (10.0)
+|   |   |   |   |   |   |   |   |   |   |   IdleMax > 0.589167: DoSHulk (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   BwdPackets/s > 0.009434: DoSSlowhttptest (3.0)
+|   |   |   |   |   |   |   |   URGFlagCount > 0: DoSSlowhttptest (9.0/1.0)
+|   |   |   |   |   FwdPSHFlags > 0
+|   |   |   |   |   |   FwdPacketLengthMean <= 0.001897
+|   |   |   |   |   |   |   FwdPacketLengthMin <= 0.00347
+|   |   |   |   |   |   |   |   BwdHeaderLength <= 0.966673: BENIGN (7.0)
+|   |   |   |   |   |   |   |   BwdHeaderLength > 0.966673: FTP-Patator (98.0/1.0)
+|   |   |   |   |   |   |   FwdPacketLengthMin > 0.00347: DoSslowloris (15.0)
+|   |   |   |   |   |   FwdPacketLengthMean > 0.001897
+|   |   |   |   |   |   |   FwdPacketLengthMin <= 0.061141: BENIGN (338.0)
+|   |   |   |   |   |   |   FwdPacketLengthMin > 0.061141
+|   |   |   |   |   |   |   |   Down/UpRatio <= 0.025641: DoSSlowhttptest (12.0)
+|   |   |   |   |   |   |   |   Down/UpRatio > 0.025641: BENIGN (2.0/1.0)
+|   |   |   |   TotalBackwardPackets > 0.000247
+|   |   |   |   |   FwdPacketLengthMax <= 0.000171
+|   |   |   |   |   |   BwdPacketLengthMax <= 0.000205: BENIGN (41.0/1.0)
+|   |   |   |   |   |   BwdPacketLengthMax > 0.000205: PortScan (199.0)
+|   |   |   |   |   FwdPacketLengthMax > 0.000171
+|   |   |   |   |   |   TotalLengthofFwdPackets <= 0.028367: BENIGN (550.0)
+|   |   |   |   |   |   TotalLengthofFwdPackets > 0.028367: WebAttack (10.0/1.0)
+|   |   |   BwdIATMean > 0.208333
+|   |   |   |   FwdPacketLengthMax <= 0.011845
+|   |   |   |   |   PSHFlagCount <= 0: BENIGN (8.0)
+|   |   |   |   |   PSHFlagCount > 0: DoSslowloris (65.0/1.0)
+|   |   |   |   FwdPacketLengthMax > 0.011845: DoSSlowhttptest (50.0)
+|   |   act_data_pkt_fwd > 0.001533
+|   |   |   AveragePacketSize <= 0.003446
+|   |   |   |   FwdPacketLengthMin <= 0.001359
+|   |   |   |   |   TotalBackwardPackets <= 0.000045: BENIGN (2.0)
+|   |   |   |   |   TotalBackwardPackets > 0.000045: FTP-Patator (102.0)
+|   |   |   |   FwdPacketLengthMin > 0.001359: DDoS (79.0)
+|   |   |   AveragePacketSize > 0.003446
+|   |   |   |   act_data_pkt_fwd <= 0.008286
+|   |   |   |   |   FwdPacketLengthMean <= 0.00181: DDoS (4.0)
+|   |   |   |   |   FwdPacketLengthMean > 0.00181: BENIGN (422.0)
+|   |   |   |   act_data_pkt_fwd > 0.008286
+|   |   |   |   |   PacketLengthMean <= 0.028937
+|   |   |   |   |   |   PSHFlagCount <= 0: BENIGN (3.0)
+|   |   |   |   |   |   PSHFlagCount > 0: SSH-Patator (108.0)
+|   |   |   |   |   PacketLengthMean > 0.028937: BENIGN (51.0)
+|   FwdIATMin > 0.003429
+|   |   FlowIATMean <= 0.001849: Bot (45.0)
+|   |   FlowIATMean > 0.001849
+|   |   |   ActiveMin <= 0.048852
+|   |   |   |   MinPacketLength <= 0.001531
+|   |   |   |   |   FwdHeaderLength <= 0.000054
+|   |   |   |   |   |   FlowIATStd <= 0.004789
+|   |   |   |   |   |   |   Init_Win_bytes_forward <= 0.06366: DoSGoldenEye (44.0)
+|   |   |   |   |   |   |   Init_Win_bytes_forward > 0.06366: BENIGN (4.0)
+|   |   |   |   |   |   FlowIATStd > 0.004789
+|   |   |   |   |   |   |   BwdPacketLengthMax <= 0.000152
+|   |   |   |   |   |   |   |   min_seg_size_forward <= 0.5: BENIGN (6.0)
+|   |   |   |   |   |   |   |   min_seg_size_forward > 0.5
+|   |   |   |   |   |   |   |   |   FwdPacketLengthMax <= 0.000342
+|   |   |   |   |   |   |   |   |   |   Init_Win_bytes_backward <= 0.004471
+|   |   |   |   |   |   |   |   |   |   |   FwdPacketLengthStd <= 0.000198: DoSslowloris (102.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   FwdPacketLengthStd > 0.000198
+|   |   |   |   |   |   |   |   |   |   |   |   FwdPacketLengthMax <= 0.000287: DoSSlowhttptest (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   FwdPacketLengthMax > 0.000287: DoSslowloris (8.0)
+|   |   |   |   |   |   |   |   |   |   Init_Win_bytes_backward > 0.004471: BENIGN (2.0)
+|   |   |   |   |   |   |   |   |   FwdPacketLengthMax > 0.000342: DoSSlowhttptest (10.0)
+|   |   |   |   |   |   |   BwdPacketLengthMax > 0.000152: DoSGoldenEye (11.0)
+|   |   |   |   |   FwdHeaderLength > 0.000054: BENIGN (34.0)
+|   |   |   |   MinPacketLength > 0.001531
+|   |   |   |   |   FwdPacketLengthMax <= 0.006174: BENIGN (170.0)
+|   |   |   |   |   FwdPacketLengthMax > 0.006174: DoSSlowhttptest (16.0)
+|   |   |   ActiveMin > 0.048852
+|   |   |   |   TotalBackwardPackets <= 0.000011: DoSSlowhttptest (89.0/1.0)
+|   |   |   |   TotalBackwardPackets > 0.000011: BENIGN (2.0)
+PacketLengthVariance > 0.100866
+|   FwdPacketLengthMax <= 0.00481: DDoS (117.0)
+|   FwdPacketLengthMax > 0.00481
+|   |   SubflowFwdBytes <= 0.001955
+|   |   |   PSHFlagCount <= 0: DoSHulk (124.0/1.0)
+|   |   |   PSHFlagCount > 0
+|   |   |   |   BwdHeaderLength <= 0.000094
+|   |   |   |   |   TotalFwdPackets <= 0.00002: DoSHulk (8.0)
+|   |   |   |   |   TotalFwdPackets > 0.00002: DoSGoldenEye (94.0)
+|   |   |   |   BwdHeaderLength > 0.000094: BENIGN (9.0)
+|   |   SubflowFwdBytes > 0.001955
+|   |   |   BwdPackets/s <= 0.00009: BENIGN (65.0)
+|   |   |   BwdPackets/s > 0.00009
+|   |   |   |   min_seg_size_forward <= 0.4: Bot (10.0)
+|   |   |   |   min_seg_size_forward > 0.4: BENIGN (2.0)
+
+Number of Leaves  : 	94
+
+Size of the tree : 	187
+
+
+Time taken to build model: 2.74 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.36 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        2472               98.88   %
+Incorrectly Classified Instances        28                1.12   %
+Kappa statistic                          0.9686
+Mean absolute error                      0.0025
+Root mean squared error                  0.0437
+Relative absolute error                  3.892  %
+Root relative squared error             24.2854 %
+Total Number of Instances             2500     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.993    0.026    0.993      0.993    0.993      0.966    0.984     0.992     BENIGN
+                 0.960    0.001    0.941      0.960    0.950      0.950    0.980     0.942     WebAttack
+                 0.960    0.002    0.906      0.960    0.932      0.931    0.979     0.904     Bot
+                 1.000    0.000    0.980      1.000    0.990      0.990    1.000     0.980     DDoS
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     PortScan
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     FTP-Patator
+                 0.980    0.000    1.000      0.980    0.990      0.990    0.989     0.980     SSH-Patator
+                 0.920    0.002    0.920      0.920    0.920      0.918    0.969     0.884     DoSGoldenEye
+                 0.980    0.000    1.000      0.980    0.990      0.990    0.990     0.980     DoSHulk
+                 0.920    0.000    0.979      0.920    0.948      0.948    0.968     0.894     DoSSlowhttptest
+                 1.000    0.000    0.980      1.000    0.990      0.990    1.000     0.999     DoSslowloris
+Weighted Avg.    0.989    0.021    0.989      0.989    0.989      0.967    0.985     0.985     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g    h    i    j    k   <-- classified as
+ 1986    3    5    1    0    0    0    3    0    1    1 |    a = BENIGN
+    2   48    0    0    0    0    0    0    0    0    0 |    b = WebAttack
+    2    0   48    0    0    0    0    0    0    0    0 |    c = Bot
+    0    0    0   50    0    0    0    0    0    0    0 |    d = DDoS
+    0    0    0    0   50    0    0    0    0    0    0 |    e = PortScan
+    0    0    0    0    0   50    0    0    0    0    0 |    f = FTP-Patator
+    1    0    0    0    0    0   49    0    0    0    0 |    g = SSH-Patator
+    4    0    0    0    0    0    0   46    0    0    0 |    h = DoSGoldenEye
+    0    0    0    0    0    0    0    1   49    0    0 |    i = DoSHulk
+    4    0    0    0    0    0    0    0    0   46    0 |    j = DoSSlowhttptest
+    0    0    0    0    0    0    0    0    0    0   50 |    k = DoSslowloris
+
